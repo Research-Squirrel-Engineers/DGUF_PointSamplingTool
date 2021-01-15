@@ -23,3 +23,5 @@ vorgestellten Produkt?
 https://www.dguf.de/fileadmin/AI/ArchInf-EV_Klammt2.pdf
 
 https://www.dguf.de/fileadmin/AI/ArchInf-EV_Klammt.pdf
+
+https://www.dguf.de/archaeologische-informationen-fuer-autoren/redaktionsrichtlinien-ai
