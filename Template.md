@@ -14,3 +14,9 @@ Tutorial oder Anleitungen?
 das Programm, welche Alternativen gibt es, werden Aufgaben besser, anders, eleganter gelöst als mit den Alternativen?
 - Eine persönliche Bilanz des Rezensenten: Was ist gut, was ist weniger gut an dem
 vorgestellten Produkt?
+
+# Beispiele
+
+https://www.dguf.de/fileadmin/AI/ArchInf-EV_Klammt2.pdf
+
+https://www.dguf.de/fileadmin/AI/ArchInf-EV_Klammt.pdf
