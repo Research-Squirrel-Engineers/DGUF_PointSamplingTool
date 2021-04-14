@@ -36,12 +36,17 @@
 
 * :bangbang:**How does the installation work and where is the software kept?** 
 
+- Installation using the QGIS Plugin dialog
+
 * :heavy_exclamation_mark:**Is it a stand-alone software or a web application?**
+
+- Standalone software
 
 * :heavy_exclamation_mark:**Are necessary requirements in terms of hardware and operating system clearly documented?**
 
-#### Interface
+- No, but one might infer them from QGIS
 
+#### Interface
 
 * :heavy_exclamation_mark:**Is the user interface suitable for the user group?**
 
@@ -75,9 +80,15 @@
 
 * :bangbang:**Which data formats are read in and how?**
 
+- Every dataformat supported in QGIS
+
 * :bangbang:**Which output data formats are supported?**
 
+- Every dataformat supported in QGIS
+
 * :heavy_exclamation_mark:**How can data be read in? Does the software allow batch processing?**
+
+- Using QGIS
 
 * :bangbang:**Is there an application programming interface (API)?**
 
