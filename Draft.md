@@ -88,3 +88,31 @@
 * **What data does the application store, for what purpose and for how long? Are data transferred to third parties?**
 
 ### Developer perspective
+
+#### Documentation and tests
+
+* **Does a source code documentation exist and, if applicable, is an HTML variant of it available?**
+
+* **Is the build process documented and, if applicable, automated by means of build scripts?**
+
+* :heavy_exclamation_mark:**Is the documentation up to date and does it address all functions of the programme?**
+
+* **Is there developer documentation that promotes further software development?**
+
+* **Does the source code contain software tests for testing core functions and demonstrating them to other developers?**
+
+* **Is it made easy for the developer to test the software (e.g. virtual machine, Docker container, installer)?**
+
+* **Are the developers readily accessible?**
+
+* :heavy_exclamation_mark:**Is the software being actively worked on?**
+
+* :bangbang:**Is it possible to support software development?**
+
+#### Quality of implementation
+
+* **Does the implementation reflect the state of the art?** 
+
+* **Is *Continuous Integration* used to ensure implementation quality?**
+
+
