@@ -35,7 +35,11 @@ The tool itself doesn't answer the scientific question, but simplifies the proce
 
  One author of this article used the tool for in her unpublished master's thesis. As the tool is probably rarely cited, we gather here some articles in which it could have been used: ....
 
+Blog post: https://digital-geography.com/qgis-plugins-point-sampling-tool/
+
 * :bangbang:**In what form is the software published?**
+
+The software is published as a QGIS python plugin: https://plugins.qgis.org/plugins/pointsamplingtool/ 
 
 ### Usability and target group orientation
 
