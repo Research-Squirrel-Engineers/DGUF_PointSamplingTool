@@ -17,15 +17,23 @@
 
 * :bangbang:**What task is the software trying to solve?**
 
+The point sampling tool takes information from maps at specified points and adds the information to the point table. It can be used to sample several raster as well as vector maps (i.e. layers) within QGIS at the same time. 
+
 * :bangbang:**How does the software solve a given (technical) task?**
 
 * :bangbang:**How does the scientific workflow implemented in the software work?**
 
+Especially in landscape and settlement archaeology site location parameters are of interest to the researcher. Elevation, slope, vegetation coverage and similar information are stored in maps, that can be digitized or - increasingly so - are generated born digital. Once the information is held in a digital way and the location of sites is held in a digital format as well, the point sampling tool can be used to transfer the relevant information from the maps to the site location.  One author of this article used the tool for this task in her master's thesis. The output table can be further analysed according to the archaeological question.
+
 * :bangbang:**Is the claim to be able to answer a certain scientific question with the chosen workflow correct?**
+
+The tool itself doesn't answer the scientific question, but simplifies the process of gaining information significantly.
 
 * :bangbang:**Have the algorithms been implemented correctly?**
 
 * :bangbang:**Are there any projects/application examples relevant to archaeology in which the reviewed software has already been used?**
+
+ One author of this article used the tool for in her unpublished master's thesis. As the tool is probably rarely cited, we gather here some articles in which it could have been used: ....
 
 * :bangbang:**In what form is the software published?**
 
