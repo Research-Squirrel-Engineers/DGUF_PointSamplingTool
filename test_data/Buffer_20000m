@@ -1,0 +1,51 @@
+QGIS version: 3.16.3-Hannover
+QGIS code revision: 94ac9f21b8
+Qt version: 5.9.5
+GDAL version: 2.2.3
+GEOS version: 3.6.2-CAPI-1.10.2 4d2925d6
+PROJ version: 493
+Processing algorithm…
+Algorithm 'Buffer' starting…
+Input parameters:
+{ 'DISSOLVE' : False, 'DISTANCE' : 20000, 'END_CAP_STYLE' : 2, 'INPUT' : '/home/ankl_admin/Documents/github/DGUF_PointSamplingTool/test_data/points_10000.geojson', 'JOIN_STYLE' : 1, 'MITER_LIMIT' : 2, 'OUTPUT' : 'TEMPORARY_OUTPUT', 'SEGMENTS' : 5 }
+
+Execution completed in 0.28 seconds
+Results:
+{'OUTPUT': 'Buffered_519cce10_ee5e_4d57_b455_151183b1d1be'}
+
+Loading resulting layers
+Algorithm 'Buffer' finished
+QGIS version: 3.16.3-Hannover
+QGIS code revision: 94ac9f21b8
+Qt version: 5.9.5
+GDAL version: 2.2.3
+GEOS version: 3.6.2-CAPI-1.10.2 4d2925d6
+PROJ version: 493
+Processing algorithm…
+Algorithm 'Buffer' starting…
+Input parameters:
+{ 'DISSOLVE' : False, 'DISTANCE' : 20000, 'END_CAP_STYLE' : 2, 'INPUT' : '/home/ankl_admin/Documents/github/DGUF_PointSamplingTool/test_data/points_10000.geojson', 'JOIN_STYLE' : 2, 'MITER_LIMIT' : 2, 'OUTPUT' : 'TEMPORARY_OUTPUT', 'SEGMENTS' : 5 }
+
+Execution completed in 0.07 seconds
+Results:
+{'OUTPUT': 'Buffered_a71548bc_7641_42a1_8d0c_05249a6176ac'}
+
+Loading resulting layers
+Algorithm 'Buffer' finished
+QGIS version: 3.16.3-Hannover
+QGIS code revision: 94ac9f21b8
+Qt version: 5.9.5
+GDAL version: 2.2.3
+GEOS version: 3.6.2-CAPI-1.10.2 4d2925d6
+PROJ version: 493
+Processing algorithm…
+Algorithm 'Buffer' starting…
+Input parameters:
+{ 'DISSOLVE' : False, 'DISTANCE' : 20000, 'END_CAP_STYLE' : 0, 'INPUT' : '/home/ankl_admin/Documents/github/DGUF_PointSamplingTool/test_data/points_10000.geojson', 'JOIN_STYLE' : 0, 'MITER_LIMIT' : 2, 'OUTPUT' : 'TEMPORARY_OUTPUT', 'SEGMENTS' : 10 }
+
+Execution completed in 0.09 seconds
+Results:
+{'OUTPUT': 'Buffered_fdeaff60_cf55_4102_ba31_8a4eb7d57344'}
+
+Loading resulting layers
+Algorithm 'Buffer' finished

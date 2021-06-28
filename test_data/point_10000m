@@ -1,0 +1,34 @@
+QGIS version: 3.16.3-Hannover
+QGIS code revision: 94ac9f21b8
+Qt version: 5.9.5
+GDAL version: 2.2.3
+GEOS version: 3.6.2-CAPI-1.10.2 4d2925d6
+PROJ version: 493
+Processing algorithm…
+Algorithm 'Regular points' starting…
+Input parameters:
+{ 'CRS' : QgsCoordinateReferenceSystem('EPSG:3857'), 'EXTENT' : '10.506729126,12.686701775,52.687744141,53.540401459 [EPSG:4326]', 'INSET' : 1500, 'IS_SPACING' : True, 'OUTPUT' : '/home/ankl_admin/Documents/github/DGUF_PointSamplingTool/test_data/points_1500.geojson', 'RANDOMIZE' : False, 'SPACING' : 1500 }
+
+Execution completed in 0.35 seconds
+Results:
+{'OUTPUT': '/home/ankl_admin/Documents/github/DGUF_PointSamplingTool/test_data/points_1500.geojson'}
+
+Loading resulting layers
+Algorithm 'Regular points' finished
+QGIS version: 3.16.3-Hannover
+QGIS code revision: 94ac9f21b8
+Qt version: 5.9.5
+GDAL version: 2.2.3
+GEOS version: 3.6.2-CAPI-1.10.2 4d2925d6
+PROJ version: 493
+Processing algorithm…
+Algorithm 'Regular points' starting…
+Input parameters:
+{ 'CRS' : QgsCoordinateReferenceSystem('EPSG:3857'), 'EXTENT' : '10.506729126,12.686701775,52.687744141,53.540401459 [EPSG:4326]', 'INSET' : 10000, 'IS_SPACING' : True, 'OUTPUT' : '/home/ankl_admin/Documents/github/DGUF_PointSamplingTool/test_data/points_10000.geojson', 'RANDOMIZE' : False, 'SPACING' : 10000 }
+
+Execution completed in 0.01 seconds
+Results:
+{'OUTPUT': '/home/ankl_admin/Documents/github/DGUF_PointSamplingTool/test_data/points_10000.geojson'}
+
+Loading resulting layers
+Algorithm 'Regular points' finished
