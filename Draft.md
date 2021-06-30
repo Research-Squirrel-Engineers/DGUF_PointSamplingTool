@@ -100,7 +100,7 @@ The plugin comes in english only.
 
 * **Are error messages easily understandable by reviewers?**
 
-Testing shows, that there are error messages as well as warnings. Errors encompasses wrong or missing choices concerning the layers to be matched or identical fieldnames. A warning is given when layers of different coordination reference systems are concerned. And short phrases as status support the user in solving errors and problems.
+Testing shows, that there are error messages as well as warnings. Errors encompasses wrong or missing choices concerning the layers to be matched or identical fieldnames. A warning is given when layers of different coordination reference systems are concerned. As it is warning you can overreide this, that allows seemless working with data that might have false metadata. And short phrases as status support the user in solving errors and problems.
 
 #### Performance and Robustness
 
@@ -116,7 +116,7 @@ Habe Punktelayer mit 16000 Punkten auf Bufferlayer mit umfanreichen geometrische
 
 * :bangbang:**Are there enough tutorials for learning the software?**
 
-There are no tutorials offered by QGIS itself (Documentation?), but according to the wide use of the tool, indicated by the sheer number of downloads) there are tutorials from users, teachers and university courses on the internet. This is especially helpful, as they come in a variety of languages especially English, French, Spanish and Portugese.
+There are no tutorials offered by QGIS itself (Documentation?), but according to the wide use of the tool, indicated by the sheer number of downloads) there are tutorials from users, teachers and university courses on the internet. This is especially helpful, as they come in a variety of languages like French, Spanish and Portugese, so its use in an international context with multilingual research teams is facilitated.
 
 * :heavy_exclamation_mark:**Do test data sets exist for the software?**
 
@@ -131,13 +131,13 @@ There are several points of departure (QGIS Documentation, the QGIS plugin repos
 
 * :heavy_exclamation_mark:**Are there archaeological best practices or publications that refer to the reviewed software?**
 
-No, but this won't make any sense, still there are trillions of idiotic "studies" that may made use of the tool. But you can't blame the plate for the disgusting food it serves.
+No, but this won't make any sense in respect to the task the tool carries out.
 
 #### Data ingest, interoperability and programming interfaces
 
 * :bangbang:**Which data formats are read in and how?**
 
-- Every dataformat supported in QGIS. Still matching the task it is supposed to perform, only point feature (no multipoints) can serve as input layers.   
+- Every dataformat supported in QGIS. Still, matching the task it is supposed to perform, only point feature (no multipoints) can serve as input layers.   
 
 * :bangbang:**Which output data formats are supported?**
 
@@ -171,7 +171,7 @@ The QGIS plugin does not offer a batch process. The input data and the parameter
 
 * **Is there developer documentation that promotes further software development?**
 
-I don't think so. But: der code ist kommentiert und dort finden sich auch Hinweise des Entwicklers auf bestehende Problemem, die er bislang nicht lösen konnte ->  https://github.com/borysiasty/pointsamplingtool/blob/master/doPointSamplingTool.py Zeile 206 folgende
+I don't think so. But: der code ist kommentiert und dort finden sich auch Hinweise des Entwicklers auf bestehende Probleme, die er bislang nicht lösen konnte ->  https://github.com/borysiasty/pointsamplingtool/blob/master/doPointSamplingTool.py Zeile 206 folgende
 
 * **Does the source code contain software tests for testing core functions and demonstrating them to other developers?**
 
@@ -181,7 +181,7 @@ I don't think so. But: der code ist kommentiert und dort finden sich auch Hinwei
 
 * :heavy_exclamation_mark:**Is the software being actively worked on?**
 
-ist mir nicht ganz klar -> offener Pull request von April 2020
+From the perspective of the reviewers the software is activley maintained by almost entirely one developer. Pull requests are open but the problems solved or otherwise commented. 
 
 * :bangbang:**Is it possible to support software development?**
 
