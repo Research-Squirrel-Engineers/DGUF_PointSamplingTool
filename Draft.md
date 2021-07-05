@@ -149,7 +149,7 @@ The QGIS plugin does not offer a batch process. The input data and the parameter
 
 
 * :bangbang:**Is there an application programming interface (API)?**
-
+The plugin support the QGIS processing API, which allows this plugin to be integrated into other QGIS (batch) proccessing tasks. 
 
 
 <!--- >#### Conformity with regulations on data protection and data minimisation
@@ -178,6 +178,7 @@ The python script does not include a HTML documentation, but contains numerous c
 I don't think so. But: der code ist kommentiert und dort finden sich auch Hinweise des Entwicklers auf bestehende Probleme, die er bislang nicht lösen konnte ->  https://github.com/borysiasty/pointsamplingtool/blob/master/doPointSamplingTool.py Zeile 206 folgende
 
 * **Does the source code contain software tests for testing core functions and demonstrating them to other developers?**
+ The source code does not provide software tests and no example data or any other hints as to how the software can be tested. The software repository might benefit from a small tutorial with some sample data, such as the ones we contribute with our software review article.
 
 * **Is it made easy for the developer to test the software (e.g. virtual machine, Docker container, installer)?**
   Yes. The user is able to install the plugin from within QGIS by just selecting the latest version in the QGIS plugin dialogue.
@@ -190,6 +191,7 @@ I don't think so. But: der code ist kommentiert und dort finden sich auch Hinwei
 From the perspective of the reviewers the software is activley maintained by almost entirely one developer. Pull requests are open but the problems solved or otherwise commented. 
 
 * :bangbang:**Is it possible to support software development?**
+ The software development can be supported and has been supported, as proven by a number of accepted pull requests in the Github repository. However, the developed does not give a guideline as to how he expects contributions to be submitted (contribution guideline). The developer also does not describe a roadmap of a goals as to which functions might be implemented in later versions. This might give other developers an orientation as to which contributions might be useful to make. However, one might argue that the developer might consider his work to be finished or the tool sufficiently apt for use in QGIS. In that case, there are possibly no future plans apart from maintaining the software.
 
 #### Quality of implementation
 
