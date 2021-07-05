@@ -160,14 +160,18 @@ The QGIS plugin does not offer a batch process. The input data and the parameter
 
 ### Developer perspective
 
+The source code of the PointSamplingTool is publicly available on Github and the software is liecense under the terms of the GNU GPL.
+
 #### Documentation and tests
 
 * **Does a source code documentation exist and, if applicable, is an HTML variant of it available?**
-
+The python script does not include a HTML documentation, but contains numerous comments in the available source code. Even though it would be advisable to create a HTML documentation that is appropriate for Python, one has to take into account the scope of the QGIS plugin and its frame of reference. A QGIS plugin contains certain fixed structures which should be obvious to anyone developing a QGIS plugin. The source code is also comparatively limited and can be assessed by the average developer without too much effort.
 
 * **Is the build process documented and, if applicable, automated by means of build scripts?**
+  The build process is not documented, but in this case this is also not necessary, as a QGIS plugin only needs to be extracted into the QGIS plugin folder.
 
 * :heavy_exclamation_mark:**Is the documentation up to date and does it address all functions of the programme?**
+  No source code 
 
 * **Is there developer documentation that promotes further software development?**
 
@@ -176,8 +180,10 @@ I don't think so. But: der code ist kommentiert und dort finden sich auch Hinwei
 * **Does the source code contain software tests for testing core functions and demonstrating them to other developers?**
 
 * **Is it made easy for the developer to test the software (e.g. virtual machine, Docker container, installer)?**
+  Yes. The user is able to install the plugin from within QGIS by just selecting the latest version in the QGIS plugin dialogue.
 
 * **Are the developers readily accessible?**
+  Judging from the Github issues and pull requests from the project, the authors gets the impression that there are not many issues and pull requests, but the ones that have been raised have always been addressed by the main developer.
 
 * :heavy_exclamation_mark:**Is the software being actively worked on?**
 
