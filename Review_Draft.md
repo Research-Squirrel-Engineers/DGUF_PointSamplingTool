@@ -5,14 +5,14 @@ Latest stable version: 0.5.3
 
 ## Software Metadata:
 
-- Name: The name of the software, e.g. *"PointSamplingTool"*.
-- Short description: Summary of what the software does, e.g. *"Comprehensive graphical tool for spatial data processing"*.
-- Reviewed version: The software version used for the review, e.g. *"3.10.10 LTR"*.
-- Platform: (Operating) systems on which the software can be used, e.g. *"Windows, MacOS, Linux, BSD, Android"*.
-- Website: URL where further information can be found, e.g. *https://plugins.qgis.org/plugins/pointsamplingtool/*.
-- Licensing: Software licence under which the software was published, e.g. *"Open Source with GNU General Public License (GPL)"*.
-- Costs: If applicable, regular or one-off licence fees, e.g. *"free of charge"*.
-- Input and output formats: The file formats the software can process, e.g. *"geodatabases" (SpatiaLite, PostGIS, MSSQL, ...), "web geodata services" (WMD/WMTS, Vector Tiles, XYZ Tiles, WFS, ...), "geo-vector data formats" (ESRI Shapefile, Geopackage, . ...), "geo-raster data formats" (GeoTIFF, ...), "table data" (CSV, TXT, ...) and other data types* (for QGIS there are an unusually large number of data formats to consider, which would go beyond the scope here).
+- Name: *PointSamplingTool*.
+- Short description: *QGIS plugin for sampling polygon attributes and raster values from multiple layers at specified sampling points*.
+- Reviewed version: *0.5.3*.
+- Platform: *Windows, MacOS, Linux*.
+- Website: *https://plugins.qgis.org/plugins/pointsamplingtool/*.
+- Licensing: *"Open Source with GNU General Public License (GPL)"*.
+- Costs: *free of charge*.
+- Input and output formats: *geo-vector data formats (ESRI Shapefile, Geopackage, . ...), geo-raster data formats (GeoTIFF, ...), "table data" (CSV, TXT, ...)* .
 
 ### Use in archaeology and scientific purpose
 
