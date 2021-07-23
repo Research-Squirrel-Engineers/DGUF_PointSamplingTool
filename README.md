@@ -1,7 +1,6 @@
 # DGUF_PointSamplingTool
 
-This repository is the working space for a group of authors writing a software review for the journal "Archäologische Informationen", edited by the DGUF, following the review process outlined in https://doi.org/10.11588/ai.2020.1.81423 and using the following review template:
- [Software Review Template](https://research-squirrel-engineers.github.io/DGUF_PointSamplingTool/DraftTemplate.html)
+This repository is the working space for a group of authors writing a software review for the journal "Archäologische Informationen", edited by the DGUF, following the review process outlined in https://doi.org/10.11588/ai.2020.1.81423.
 
 [Software Review](https://research-squirrel-engineers.github.io/DGUF_PointSamplingTool/Review_Draft.html)
 
@@ -12,3 +11,6 @@ https://github.com/Research-Squirrel-Engineers/pointsamplingtool
 
 It refers to testdata stored in this repository: 
 https://github.com/Research-Squirrel-Engineers/pointsamplingtool-testdata
+
+The review was based on the following review template:
+[Software Review Template](https://research-squirrel-engineers.github.io/DGUF_PointSamplingTool/DraftTemplate.html)
