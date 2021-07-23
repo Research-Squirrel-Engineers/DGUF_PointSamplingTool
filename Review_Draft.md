@@ -16,15 +16,9 @@ Latest stable version: 0.5.3
 
 ### Use in archaeology and scientific purpose
 
-In archaeology, the analysis of site factors of settlements and the correlation of sites and geographic conditions (land use, elevation, slope, accessibility, etc.) are questions that have been pursued with cartographic methods for more than 100 years (from the perspective of German prehistoric research, see [@grunwald_2016]) and whose investigation can nowadays be carried out almost seamlessly with the help of Geographic Information Systems. In addition to queries for the distribution of certain factors, such as soil type or land use in the vicinity of sites, settlement evidence, etc. with so-called buffers, in many cases already the query for the simplest geometric features - points - is fruitful. Here, the Point Sampling Tool serves as a workhorse, as it is designed to facilitate the task of obtaining values of overlying geographic features such as soil types at points of interest.
+In archaeology, the analysis of site factors of settlements and the correlation of sites and geographic conditions (land use, elevation, slope, accessibility, etc.) are questions that have been pursued with cartographic methods for more than 100 years [@grunwald_2016]. These investigations can nowadays be carried out almost seamlessly with the help of Geographic Information Systems. In addition to queries for the distribution of certain factors, such as soil type or land use in the vicinity of sites, settlement evidence, etc. with so-called buffers, in many cases already the query for the simplest geometric features - points - is fruitful. Here, the Point Sampling Tool serves as a workhorse, as it is designed to facilitate the task of obtaining values of overlying geographic features such as soil types at points of interest: The geographic information of interest are stored in maps, that can be digitized or - increasingly so - are generated born digital. Once the information is held in a digital way and the location of sites is held in a digital format as well, the QGIS point sampling tool can be used to transfer the relevant information from the maps to the site location, by adding them as attributes to the geometry of the points in request. The output table can then be further analysed according to the archaeological question.
 
-Elevation, slope, vegetation coverage and similar information are stored in maps, that can be digitized or - increasingly so - are generated born digital. Once the information is held in a digital way and the location of sites is held in a digital format as well, the QGIS point sampling tool can be used to transfer the relevant information from the maps to the site location, by adding them as attributes to the geometry of the points in request. The output table can then be further analysed according to the archaeological question.
-
-* :bangbang:**How does the software solve a given (technical) task?**
-
-
-
-* :bangbang:**How does the scientific workflow implemented in the software work?**
+#### Workflow of the QGIS Point Sampling Tool
 
 The Python-based Point Sampling Tool extracts information from maps at specific points and adds this information to the point table. It is capable of sampling both multiple raster and vector maps (i.e. layers) within QGIS simultaneously. In doing so, it follows a routine that addresses the vector layers first and then the raster data (if both data types are included at the same time). This process sequence also determines the arrangement of the attribute fields. 
 
