@@ -1,3 +1,44 @@
+---
+title: Software Review PointSamplingTool / Software Review PointSamplingTool
+
+layout: draft
+author:
+  -
+    name: Timo Homburg
+    affiliation: Hochschule Mainz
+    orcid: 0000-0002-9499-5840
+    bio: "Timo Homburg studierte Informatik mit den Schwerpunkten Computerlinguistik (Assyrologie), Semantic Web und Sinologie. In den letzten Jahren arbeitete er im Bereich der GIS-Anwendungen in der Geoinformatik. Seine Doktorarbeit beschäftigt sich mit der besseren Integration von Geodaten in ein Semantic-Web-Umfeld. Sein aktuelles Forschungsvorhaben beschäftigt sich mit der Schaffung digitaler Standards im Bereich Assyrologie und der Best-Practice-Dokumentation von Ausgrabungen mit Keilschrifttexten – eine Erweiterung seiner Publikationen zum Thema ‚Keilschrift in den Digital Humanities‘."
+  -
+    name: Anne Klammt
+    affiliation: Deutsches Forum für Kunstgeschichte Paris
+    orcid: 0000-0003-3697-9241
+    bio: "Die Archäologin Anne Klammt hat über ein landschaftsarchäologisches Thema promoviert und ist seit 2020 als Forschungsleiterin für die Weiterentwicklung der Digitalen Kunstgeschichte am Deutschen Forum für Kunstgeschichte Paris verantwortlich."
+  -
+    name: Sophie Charlotte Schmidt
+    affiliation: Deutsches Archäologisches Institut
+    orcid: 0000-0003-4696-2101
+    bio: "Sophie C. Schmidt studierte Altertumswissenschaften und Prähistorische Archäologie an der Freien Universität Berlin. Im Anschluss arbeitete sie als Wissenschaftliche Mitarbeiterin im Bereich Archäoinformatik an den Universitäten Köln und Bonn, derzeit ist sie bei dem Konsortialprojekt NFDI4Objects am Deutschen Archäologischen Institut beschäftigt."
+  -
+    name: Florian Thiery
+    affiliation: Römisch-Germanisches Zentralmuseum – Leibniz-Forschungsinstitut für Archäologie
+    orcid: 0000-0002-3246-3531
+    bio: "Florian Thiery ist studierter Geodät und Research Software Engineer (RSE) im Arbeitsbereich *Wissenschaftliche IT, Digitale Plattformen und Tools* am Römisch-Germanischen Zentralmuseum in Mainz. Er ist Initiator der *Research Squirrel Engineers*, einem Netzwerk für RSEs in den Digital Humanities und Communityprojekte mit Fokus auf freie und offene Daten, sowie Linked Open Data. Im Rahmen eines Stipendiums des *Wikimedia Fellow-Programm Freies Wissen* beschäftigt er sich mit der Modellierung von irischen ᚑᚌᚆᚐᚋ (Ogham) Steinen und deren Publikation im Wikimedia Universum."
+
+bibliography: literatur.bib
+keywords:
+  - Archäologie
+  - PointSamplingTool
+  - Softwarebewertung
+  - Forschungssoftware
+  - Rezension
+keywords_en:
+  - archaeology
+  - manual
+  - software review
+  - research software
+  - review
+---
+
 # Software Review for the Software PointSamplingTool
 
 QGIS Point sampling tool, by Borys Jurgiel - a QGIS plugin, which samples polygon attributes and raster values from multiple layers at specified sampling points: https://plugins.qgis.org/plugins/pointsamplingtool/
