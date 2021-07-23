@@ -5,7 +5,6 @@ abstract_de:
 abstract_en: 
 layout: draft
 author:
-
   -
     name: Timo Homburg
     affiliation: Hochschule Mainz
