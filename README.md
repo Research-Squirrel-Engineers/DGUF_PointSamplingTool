@@ -6,4 +6,6 @@ This review is based on the following version of the PointSamplingTool: https://
 
 It refers to testdata stored in this repository: https://github.com/Research-Squirrel-Engineers/pointsamplingtool-testdata
 
-[English Version](https://research-squirrel-engineers.github.io/DGUF_PointSamplingTool/Draft.html)
+[Questions answerd from the review guide](https://research-squirrel-engineers.github.io/DGUF_PointSamplingTool/Draft.html)
+
+[Software Review](https://research-squirrel-engineers.github.io/DGUF_PointSamplingTool/Review_Draft.html)
