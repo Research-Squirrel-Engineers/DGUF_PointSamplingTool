@@ -28,9 +28,9 @@ author:
     bio: "Clemens Schmid studied prehistoric, historical and scientific archaeology as well as computer science in Tübingen and Kiel. After graduating, he worked with computational data analysis in various archaeological research projects at the University of Kiel, the Roman-Germanic Central Museum in Mainz and the University of Bern. Now he is employed for a PhD project on quantitative estimation of past human mobility with ancient genetic and historical-linguistic data at the Department of Archaeogenetics of the Max Planck Institute for the Science of Human History in Jena."
   -
     name: Sophie Charlotte Schmidt
-    affiliation: Deutsches Archäologisches Institut
+    affiliation: Freie Universität Berlin
     orcid: 0000-0003-4696-2101
-    bio: "Sophie C. Schmidt studied Classical Studies and Prehistoric Archaeology at the Free University of Berlin. She then worked as a research assistant in the field of archaeoinformatics at the universities of Cologne and Bonn, and is currently employed in the NFDI4Objects consortium project at the German Archaeological Institute."    
+    bio: "Sophie C. Schmidt studied Classical Studies and Prehistoric Archaeology at the Free University of Berlin. She then worked as a research assistant in the field of archaeoinformatics at the universities of Cologne and Bonn, and at the NFDI4Objects consortium project at the German Archaeological Institute. Right now she works on her PhD project on 5th mill. BC in Brandenburg at the Free University Berlin."    
   -
     name: Florian Thiery
     affiliation: Römisch-Germanisches Zentralmuseum – Leibniz-Forschungsinstitut für Archäologie
