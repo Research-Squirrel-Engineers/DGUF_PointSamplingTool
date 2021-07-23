@@ -6,6 +6,7 @@ relative_links:
   collections: true
 include:
   - Draft.md
+  - Draft_Template.md
   - Review_Draft.md
 
 theme: jekyll-theme-tactile
