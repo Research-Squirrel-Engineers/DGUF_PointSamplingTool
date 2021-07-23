@@ -1,3 +1,68 @@
+---
+title: Software Review for the Software PointSamplingTool
+
+abstract_de: 
+abstract_en: 
+layout: draft
+author:
+
+  -
+    name: Timo Homburg
+    affiliation: Hochschule Mainz
+    orcid: 0000-0002-9499-5840
+    bio: "Timo Homburg studied computer science with a focus on computational linguistics (assyriology), semantic web and sinology. In recent years, he has worked in the field of GIS applications in geoinformatics. His doctoral thesis deals with better integration of geodata into a Semantic Web environment. His current research project deals with the design and establishment of digital standards in the field of assyriology and a best practice for documentation of excavations with cuneiform texts - an extension of his publications on 'Cuneiform Script in the Digital Humanities'."
+  -
+    name: Anne Klammt
+    affiliation: Deutsches Forum für Kunstgeschichte Paris
+    orcid: 0000-0003-3697-9241
+    bio: "Archaeologist Anne Klammt completed her doctorate on a landscape archaeology topic and has been responsible for the further development of Digital Art History at the German Forum for Art History Paris as Head of Research since 2020."
+  -
+    name: Hubert Mara
+    affiliation: mainzed & Hochschule Mainz
+    orcid: 0000-0002-2004-4153
+    bio: "Hubert Mara studied computer science at the Vienna University of Technology. There he already worked on digital methods in archaeology for ceramic analysis. He was subsequently a Marie Curie Fellow at the University of Florence within the framework of the *Cultural Heritage Informatics Research Oriented Network* (CHIRON). He completed his doctorate at the University of Heidelberg in the *Interdisciplinary Centre for Scientific Computing* (IWR). There he developed the [*GigaMesh Software Framework*](https://gigamesh.eu) and installed the *Forensic Computational Geometry Laboratory* (FCGL). Since June 2020, he has been the managing director of mainzed and is a researcher at the Institute for Spatial Information and Measurement Technology at Mainz University of Applied Sciences."
+  -  
+    name: Clemens Schmid
+    affiliation: Max Planck Institute for the Science of Human History
+    orcid: 0000-0003-3448-5715
+    bio: "Clemens Schmid studied prehistoric, historical and scientific archaeology as well as computer science in Tübingen and Kiel. After graduating, he worked with computational data analysis in various archaeological research projects at the University of Kiel, the Roman-Germanic Central Museum in Mainz and the University of Bern. Now he is employed for a PhD project on quantitative estimation of past human mobility with ancient genetic and historical-linguistic data at the Department of Archaeogenetics of the Max Planck Institute for the Science of Human History in Jena."
+  -
+    name: Sophie Charlotte Schmidt
+    affiliation: Deutsches Archäologisches Institut
+    orcid: 0000-0003-4696-2101
+    bio: "Sophie C. Schmidt studied Classical Studies and Prehistoric Archaeology at the Free University of Berlin. She then worked as a research assistant in the field of archaeoinformatics at the universities of Cologne and Bonn, and is currently employed in the NFDI4Objects consortium project at the German Archaeological Institute."    
+  -
+    name: Florian Thiery
+    affiliation: Römisch-Germanisches Zentralmuseum – Leibniz-Forschungsinstitut für Archäologie
+    orcid: 0000-0002-3246-3531
+    bio: "Florian Thiery studied geodesy and is a Research Software Engineer (RSE) in the *Scientific IT, Digital Platforms and Tools* department at the Römisch-Germanisches Zentralmuseum in Mainz. He is the initiator of the *Research Squirrel Engineers*, a network for RSEs in the Digital Humanities that pursues community projects with a focus on free and open data, as well as Linked Open Data. As part of a fellowship of the *Wikimedia Fellow-Programm Freies Wissen*, he is working on the modelling of Irish ᚑᚌᚆᚐᚋ (Ogham) stones and their publication in the Wikimedia universe."    
+  -
+    name: Martina Trognitz
+    affiliation: Austrian Centre for Digital Humanities and Cultural Heritage, ÖAW Wien
+    orcid: 0000-0003-0485-6861
+    bio: "Martina Trognitz studied computational linguistics and classical archaeology in Heidelberg. From 2012 to 2017, she worked in the IANUS project at the German Archaeological Institute. Since 2017, she has been in charge of the digital archive ARCHE of the ACDH-CH at the Austrian Academy of Sciences. She is working on a PhD project on the machine analysis of multi-sided Aegean seals of the Bronze Age."
+
+
+bibliography: bibliography.bib
+csl: apa-6th-edition.csl
+keywords:
+  - Archäologie
+  - Archäoinformatik
+  - Softwarebewertung
+  - Forschungssoftware
+  - Rezension
+  - QGIS
+keywords_en:
+  - archaeology
+  - digital archaeology
+  - software review
+  - research software
+  - review
+  - QGIS
+
+---
+
+
 # Software Review for the Software PointSamplingTool
 
 QGIS Point sampling tool, by Borys Jurgiel - a QGIS plugin, which samples polygon attributes and raster values from multiple layers at specified sampling points: https://plugins.qgis.org/plugins/pointsamplingtool/
@@ -24,8 +89,7 @@ The Python-based Point Sampling Tool extracts information from maps at points sp
 
 For multiband raster data the user has to decide which bands he wishes to sample (several bands at once are possible). For vector the attributes have to be selected - again it is possible to include all attributes. The number of resulting records is identical to the number of input points and for each vector layer only one geometry (feature) is taken into account, that is the last one in the processing, i.e. the one with the highest id. Therefore the point sampling tool can not be used for obtaining complete and fully controlled values form vector layers with several overlaying geometries. The latter could for example be the case for layers with overlaying buffers of sites or geographical feature that partly overlay each other.
 
-
-Two of the reviewers used the tool in their research and teaching (Klammt 2015; Schmidt 20##). for this task in her master's thesis. 
+Two of the reviewers used the tool in their research and teaching (Klammt 2015; Schmidt 2016).
 
 <!--- * :bangbang:**Is the claim to be able to answer a certain scientific question with the chosen workflow correct?** 
 
