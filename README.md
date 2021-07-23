@@ -6,6 +6,8 @@ This repository is the working space for a group of authors writing a software r
 
 [Questions answered from the review guide](https://research-squirrel-engineers.github.io/DGUF_PointSamplingTool/Draft.html)
 
-This review is based on the following version of the PointSamplingTool: https://github.com/Research-Squirrel-Engineers/pointsamplingtool
+This review is based on the following version of the PointSamplingTool: 
+https://github.com/Research-Squirrel-Engineers/pointsamplingtool
 
-It refers to testdata stored in this repository: https://github.com/Research-Squirrel-Engineers/pointsamplingtool-testdata
+It refers to testdata stored in this repository: 
+https://github.com/Research-Squirrel-Engineers/pointsamplingtool-testdata
