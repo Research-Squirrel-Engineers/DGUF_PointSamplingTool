@@ -81,7 +81,7 @@ Latest stable version: 0.5.3
 
 ### Use in archaeology and scientific purpose
 
-In archaeology, the analysis of site factors of settlements and the correlation of sites and geographic conditions (land use, elevation, slope, accessibility, etc.) are questions that have been pursued with cartographic methods for more than 100 years [see @grunwald_2016]. These investigations can nowadays be carried out almost seamlessly with the help of Geographic Information Systems. In many cases, e.g. if a site size is unknown [@miera_2020, 103], queries for the distribution of certain factors, such as soil type or land use are often employed on the simplest geometric features - points.
+In archaeology, the analysis of site factors of settlements and the correlation of sites and geographic conditions (land use, elevation, slope, accessibility, etc.) are questions that have been pursued with cartographic methods for more than 100 years [@grunwald_2016, 112]. These investigations can nowadays be carried out almost seamlessly with the help of Geographic Information Systems. In many cases, e.g. if a site size is unknown [@miera_2020, 103], queries for the distribution of certain factors, such as soil type or land use are often employed on the simplest geometric features - points.
 
 Here, the Point Sampling Tool serves as a workhorse, as it is designed to facilitate the task of obtaining values of overlying geographic features such as soil types at points of interest: The geographic information are stored in maps, that can be digitized or - increasingly so - are generated born digital. Once the information is held geo-referenced and in a GIS compatible format and the location of sites is held in a digital format as well, the QGIS point sampling tool can be used to transfer the relevant information from the maps to the site location, by adding them as attributes to the geometry of the points in request. The output table can then be further analysed according to the archaeological question.
 
@@ -91,7 +91,9 @@ The Python-based Point Sampling Tool extracts information from layers ("maps") l
 
 For multiband raster data the user has to decide which bands he wishes to sample (several bands at once are possible). For vector the attributes have to be selected - again it is possible to include all attributes. The number of resulting records is identical to the number of input points. For each vector layer only one geometry (feature) at one sampling point is taken into account, that is the last one in the processing, i.e. the one with the highest id. Therefore the point sampling tool can not be used for obtaining complete and fully controlled values form vector layers with several overlaying geometries. The latter could for example be the case for layers with overlapping buffers of sites or geographical feature that partly overlay each other.
 
-Two of the reviewers used the tool in their research and teaching (Klammt 2015; @schmidt_2016). Both focus on gathering information regarding the geographical settings of archaeological sites and analysing them statistically in respect to site evidence and settlement activities. The usage of the point sampling tool formed a necessary but hardly remarkable part of their research routine, so both did not expand on the tool in their theses. As the tool is probably also rarely cited by other authors, we gather here some more studies in which it could have been used: @miera_2020, @hinz_2014. 
+Two of the reviewers used the tool in their research and teaching (Klammt 2015; @schmidt_2016). Both focus on gathering information regarding the geographical settings of archaeological sites and analysing them statistically in respect to site evidence and settlement activities. The usage of the point sampling tool formed a necessary but hardly remarkable part of their research routine, so both did not expand on the tool in their theses. As the tool is probably also rarely cited by other authors, we gather here some more studies in which it could have been used since its first release in 2008: @miera_2020, @hinz_2014. 
+
+
 
 Blog post: https://digital-geography.com/qgis-plugins-point-sampling-tool/
 
@@ -102,9 +104,6 @@ The tool itself doesn't answer the scientific question, but simplifies the proce
 * :bangbang:**Have the algorithms been implemented correctly?**
 
 Ja.
-
-* :bangbang:**Are there any projects/application examples relevant to archaeology in which the reviewed software has already been used?**
-
 
 * :bangbang:**In what form is the software published?**
 
