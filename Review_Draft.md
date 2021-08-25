@@ -30,7 +30,7 @@ author:
     name: Sophie Charlotte Schmidt
     affiliation: Freie Universität Berlin
     orcid: 0000-0003-4696-2101
-    bio: "Sophie C. Schmidt studied Classical Studies and Prehistoric Archaeology at the Free University of Berlin. She then worked as a research assistant in the field of archaeoinformatics at the universities of Cologne and Bonn, and at the NFDI4Objects consortium project at the German Archaeological Institute. Right now she works on her PhD project on 5th mill. BC in Brandenburg at the Free University Berlin."    
+    bio: "Sophie C. Schmidt studied Ancient Studies and Prehistoric Archaeology at the Free University of Berlin. She then worked as a research assistant in the field of archaeoinformatics at the universities of Cologne and Bonn, and at the NFDI4Objects consortium project at the German Archaeological Institute. Right now she works on her PhD project on 5th mill. BC in Brandenburg at the Free University Berlin."    
   -
     name: Florian Thiery
     affiliation: Römisch-Germanisches Zentralmuseum – Leibniz-Forschungsinstitut für Archäologie
@@ -141,7 +141,7 @@ The point sampling tool is a universal helper and not specifically shaped for ar
 
 The Graphical User Interface follows the rather decent overall design and logic of the QGIS tool dialogues. As that it opens up with an assistant that gives the user full control to chose the layer that holds as points the locations as well as the layers to be sampled. Furthermore the user has to indicate which attribute-values from the source and the sample layer(s) should be part of the resulting new point layer. As it comes to raster data this means the selection of the raster band. A second tab gives a preview of the attribute table. The third, as it is the convention for QGIS Plugins, informs about the tool. Here the warning, that the tool does not align to multipoint-features, is placed relatively well. There is however no logfile, that facilitates the documentation and by that the reproducibility.
 
-Here we feel that the usability offers certain thresholds. Firstly it would add to the usability, if one can include into the process also layers, which are not actively in display. Wherever granular vectordata are involved QGIS considerably slows on computers which do not apply to special requirements of large data proccesing. Here often a workaround is to not display the data while processing them. From our experience researchers and students rely mostly on lesser powerful hardware. 
+Here we feel that the usability offers certain thresholds. Firstly it would add to the usability, if one can include into the process also layers, which are not actively in display. Wherever granular vector data are involved QGIS considerably slows on computers which do not apply to special requirements of large data processing. Here often a workaround is to not display the data while processing them. From our experience researchers and students rely mostly on lesser powerful hardware. 
 
 Secondly depending on the number of fields the input point layer carrys as well as the overlayed layers the selection of the attribute-fields quickly becomes confusing, tiring and facilitates errors. And as for example geodata on soil types often brings a quantity of attribute fields, this may concern archaeologists. A possible solution could be a partition of the dialogues between source and overlayed layers as shown by the core plugin "intersection " for the geoprocessing of vector layers. 
 
@@ -155,7 +155,7 @@ The plugin comes in english only.
 
 * **Are error messages easily understandable by reviewers?**
 
-Testing shows, that there are error messages as well as warnings. Errors encompasses wrong or missing choices concerning the layers to be matched or identical fieldnames. A warning is given when layers of different coordination reference systems are concerned. As it is warning you can overreide this, that allows seemless working with data that might have false metadata. And short phrases as status support the user in solving errors and problems.
+Testing shows, that there are error messages as well as warnings. Errors encompasses wrong or missing choices concerning the layers to be matched or identical fieldnames. A warning is given when layers of different coordination reference systems are concerned. As it is warning you can override this, which allows seamless working with data that might have false metadata. And short phrases as status support the user in solving errors and problems.
 
 #### Performance and Robustness
 
