@@ -1,0 +1,12 @@
+plugins:
+  - jekyll-relative-links
+  - jemoji
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - Draft.md
+  - Draft_Template.md
+  - Review_Draft.md
+
+theme: jekyll-theme-tactile

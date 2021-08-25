@@ -5,7 +5,6 @@ abstract_de:
 abstract_en: 
 layout: draft
 author:
-
   -
     name: Timo Homburg
     affiliation: Hochschule Mainz
@@ -223,44 +222,6 @@ However, what is not immediately obvious for a developer is the current state of
 Besides providing this insight for a developer, sample data can also be vital to explain the usefulness of a plugin for a new user or user group, so that we recommend the creation of a small tutorial page either on Github or another linked web resource.
 Something we found very positive when reviewing the software was that feature requests and issues visible on Github have to the date of this review all been answered by the core developer and the developer has accepted pull requests of other programmers to extend the functionality of the plugin with ideas of the community. This shows a continued interest of the developer to care about the plugin. The fact, that the plugin did not receive frequent updates before the time of this review could be interpreted as a lack of interest of the developer, however it was our perception, that the main features of the plugin have now been implemented and that there is simply no need of a further active development at the present time.
 Despite the perceived interest of the developer we would welcome a contribution guide, a small guide in which the developer states which extensions to the plugin are welcomed and in which form.
+Finally, one could judge the quality of the implementation which has several aspects to consider. Because the software to be reviewed is a QGIS Plugin, certain constraints concerning its implementation are given by requirements on how a QGIS plugin is to be implemented. Therefore, these fundamental implementations details fall out of the judgement of this review. To get an idea about the quality of the actual implementation we refer to the testcases we have created for this publication in which we investigate the resutls of the plugin for various predefined datasets.
 
-The source code of the PointSamplingTool is publicly available on Github and the software is liecense under the terms of the GNU GPL.
-
-#### Documentation and tests
-
-* **Does a source code documentation exist and, if applicable, is an HTML variant of it available?**
-The python script does not include a HTML documentation, but contains numerous comments in the available source code. Even though it would be advisable to create a HTML documentation that is appropriate for Python, one has to take into account the scope of the QGIS plugin and its frame of reference. A QGIS plugin contains certain fixed structures which should be obvious to anyone developing a QGIS plugin. The source code is also comparatively limited and can be assessed by the average developer without too much effort.
-
-* **Is the build process documented and, if applicable, automated by means of build scripts?**
-  The build process is not documented, but in this case this is also not necessary, as a QGIS plugin only needs to be extracted into the QGIS plugin folder.
-
-* :heavy_exclamation_mark:**Is the documentation up to date and does it address all functions of the programme?**
-  No source code 
-
-* **Is there developer documentation that promotes further software development?**
-
-I don't think so. But: der code ist kommentiert und dort finden sich auch Hinweise des Entwicklers auf bestehende Probleme, die er bislang nicht lösen konnte ->  https://github.com/borysiasty/pointsamplingtool/blob/master/doPointSamplingTool.py Zeile 206 folgende
-
-* **Does the source code contain software tests for testing core functions and demonstrating them to other developers?**
- The source code does not provide software tests and no example data or any other hints as to how the software can be tested. The software repository might benefit from a small tutorial with some sample data, such as the ones we contribute with our software review article.
-
-* **Is it made easy for the developer to test the software (e.g. virtual machine, Docker container, installer)?**
-  Yes. The user is able to install the plugin from within QGIS by just selecting the latest version in the QGIS plugin dialogue.
-
-* **Are the developers readily accessible?**
-  Judging from the Github issues and pull requests from the project, the authors gets the impression that there are not many issues and pull requests, but the ones that have been raised have always been addressed by the main developer.
-
-* :heavy_exclamation_mark:**Is the software being actively worked on?**
-
-From the perspective of the reviewers the software is activley maintained by almost entirely one developer. Pull requests are open but the problems solved or otherwise commented. 
-
-* :bangbang:**Is it possible to support software development?**
- The software development can be supported and has been supported, as proven by a number of accepted pull requests in the Github repository. However, the developed does not give a guideline as to how he expects contributions to be submitted (contribution guideline). The developer also does not describe a roadmap of a goals as to which functions might be implemented in later versions. This might give other developers an orientation as to which contributions might be useful to make. However, one might argue that the developer might consider his work to be finished or the tool sufficiently apt for use in QGIS. In that case, there are possibly no future plans apart from maintaining the software.
-
-#### Quality of implementation
-
-* **Does the implementation reflect the state of the art?** 
-
-* **Is *Continuous Integration* used to ensure implementation quality?**
-
-
+TESTCASE HERE?

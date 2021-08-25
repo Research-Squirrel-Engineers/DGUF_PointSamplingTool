@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>{{page.title}}</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js"></script>
+    <!--<script type="text/javascript" src="https://www.cs.cmu.edu/~mmv/bibtex_js.js"></script>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+	<script>
+function formatCitations(item){
+    var anchors = document.getElementsByTagName("a");
+for (anchor in anchors){ 
+	console.log(anchor)
+	console.log(anchors[anchor])
+	console.log(anchors[anchor].innerHTML)
+  if((typeof anchors[anchor].innerHTML !== 'undefined') && anchors[anchor].innerHTML.trim().startsWith("@")){
+	 console.log(anchors[anchor].href)
+	 console.log($('#bib'+anchors[anchor].href.substring(anchors[anchor].href.lastIndexOf('#')+1)+"author"))
+	  console.log('#bib'+anchors[anchor].href.substring(anchors[anchor].href.lastIndexOf('#')+1)+"author")
+	  console.log('#bib'+anchors[anchor].href.substring(anchors[anchor].href.lastIndexOf('#')+1)+"year")
+	  year=""
+	  if (typeof $('#bib'+anchors[anchor].href.substring(anchors[anchor].href.lastIndexOf('#')+1)+"year") !== 'undefined'
+	     && typeof $('#bib'+anchors[anchor].href.substring(anchors[anchor].href.lastIndexOf('#')+1)+"author > span[class=last] ").text() !== 'undefined'){
+	  	year=$('#bib'+anchors[anchor].href.substring(anchors[anchor].href.lastIndexOf('#')+1)+"year").text()
+	  }
+	  author=""
+	  if (typeof $('#bib'+anchors[anchor].href.substring(anchors[anchor].href.lastIndexOf('#')+1)+"author > span[class=last] ") !== 'undefined'
+	     && typeof $('#bib'+anchors[anchor].href.substring(anchors[anchor].href.lastIndexOf('#')+1)+"author > span[class=last] ").html() !== 'undefined'){
+	  	author=$('#bib'+anchors[anchor].href.substring(anchors[anchor].href.lastIndexOf('#')+1)+"author > span[class=last] ").html().trim()
+	  }
+	  console.log(author)
+	 console.log($('#bib'+anchors[anchor].href.substring(anchors[anchor].href.lastIndexOf('#')+1)+"year").html()) 
+	if(year!="" && author!="")
+  		anchors[anchor].innerHTML=""+author+" ("+year+")"
+  }
+}
+}
+</script>
+</head>
+
+<body>
+	<header><h1 align="center">{{page.title}}</h1></header>
+	<p class="authors">{% for aut in page.author %}{% assign naviIndex = {{forloop.index}} %}{{aut.name}}{% if aut.affiliation %}, {{aut.affiliation}}{% endif %} {% if aut.orcid %}<a href="https://orcid.org/{{aut.orcid}}" target="_blank">({{aut.orcid}})</a>{% endif %}{% if forloop.first == true %}<sup><a href="#authornote">*</a></sup>{% endif %}{% if forloop.last == false %}, {% endif %}<br/>{% endfor %}</p>
+	<p class="keywords">Keywords DE: {% for kw in page.keywords %}<i>{{kw}}</i>{% if forloop.last == false %}, {% endif %}{% endfor %}</p>
+	<p class="keywords">Keywords EN: {% for kw in page.keywords_en %}<i>{{kw}}</i>{% if forloop.last == false %}, {% endif %}{% endfor %}</p>
+	<p class="abstract">{% if page.abstract %}{{page.abstract}}{% endif %}</p>
+	<p class="abstract_en">{% if page.abstract_en %}{{page.abstract_en}}{% endif %}</p>
+	<div class="container">
+    <div class="row">
+      <main class="col-md-12" role="main">
+        <section>
+          {{content}}
+<div class="bibtex_structure">
+  <!--<div class="group year" extra="DESC number">
+  	  <a href="#top" style="display: inline"><em>(Seitenanfang)</em></a>-->
+  	  <div style="padding-bottom:10px;"></div>
+  	  <div class="sort author" extra="ASC string">
+		  
+      	<div class="templates"></div>
+  <!--    </div>-->
+  </div>
+</div>
+<div class="if bibtex_template" style="display: none;">
+    <ul> <li class="bibtexVar" id="+BIBTEXKEY+" extra="BIBTEXKEY">
+      <div class="if author">
+        <span class="author bibtexVar" conjunction=" und" max="7" id="bib+BIBTEXKEY+author" extra="BIBTEXKEY">
+	      <span class="von"></span> <span class="last"></span><span class="junior">, </span><span class="first">, </span>
+	</span>
+        <span class="if year">(<span class="year bibtexVar" id="bib+BIBTEXKEY+year" extra="BIBTEXKEY"></span><span class="if month">, <span class="month"></span></span><span class="if day"> <span class="day"></span></span>). </span>
+	    </div>	
+	<div> 
+	<span class="if url">
+		<a class="bibtexVar" href="+URL+" extra="URL" target="_blank" >
+        <span style="font-style: italic;" class="title"></span>.
+		</a>
+      </span>
+      <span class="if !url">
+            <span class="if !doi">
+                <span class="title" style="font-style: italic"></span>.
+            </span>
+            <span class="if doi">
+                 <a class="bibtexVar" href="https://doi.org/+DOI+" target="_blank"  extra="DOI">
+                    <span style="font-style: italic;" class="title"></span>.
+		        </a>
+            </span>
+      </span>
+	</div>
+      <div>
+        <span class="if publisher"><em><span class="publisher"></span></em>,</span>
+	<span class="if journal"><em><span class="journal"></span></em>,</span>
+        <span class="if booktitle">In <em><span class="booktitle"></span></em>,</span>
+        <span class="if editor"><span class="editor"></span> (editors),</span>
+        <!--<span class="if !journal number">Technical report <span class="number"></span>,</span>-->
+        <span class="if institution"><span class="institution"></span>,</span>
+        <span class="if address"><span class="address"></span>,</span>
+        <span class="if volume"><span class="volume"></span>,</span>
+        <span class="if journal number">(<span class="number"></span>),</span>
+	<span class="if url"><a class="bibtexVar" href="+URL+" target="_blank"  extra="URL"><span class="url"></span></a></span>
+	<span class="if urldate"> [<span class="urldate"></span>].</span>
+        <span class="if pages"> <span class="pages"></span></span>
+	<span class="if doi"> <a class="bibtexVar" href="https://doi.org/+DOI+" target="_blank"  extra="DOI">https://doi.org/<span class="doi"></span></a></span>
+        <!--<span class="if month"><span class="month"></span>,</span>-->
+	</div><div>
+        <span class="if note"><span class="note"></span>.</span>
+		<span class="if doi">
+	    <a class="bibtexVar" href="https://doi.org/+DOI+" target="_blank"  extra="DOI">
+		  [doi]</a>
+		</span>
+        <a class="bibtexVar" role="button" data-toggle="collapse" href="#bib+BIBTEXKEY+" aria-expanded="false" aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY">
+		  [bib]</a>
+		<span class="if abstract">
+        <a class="bibtexVar" role="button" data-toggle="collapse" href="#bib+BIBTEXKEY+abstract" aria-expanded="false" aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY">
+		  [abstract]</a>
+		</span>
+
+      </div>
+      <div class="bibtexVar collapse" id="bib+BIBTEXKEY+abstract" extra="BIBTEXKEY">
+		  <div class="well">
+		    <pre><span class="abstract noread"></span></pre>
+		  </div>
+	  </div>
+	   <div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
+		  <div class="well">
+		    <pre><span class="bibtexraw noread"></span></pre>
+		  </div>
+	  </div>
+      <div style="display:none"><span class="bibtextype"></span></div>
+      <div style="display:none"><span class="if topic"><span class="topic"></span></span></div>
+    </li></ul>
+  </div>
+
+<bibtex src="literatur.bib"></bibtex>
+<!--
+<select class="bibtex_search bibtex_author" search="author">
+  <option value="">Search Author</option>
+</select>
+<select class="bibtex_search bibtex_author" extra="first" search="author">
+  <option value="">Search First Author</option>
+</select>-->
+<div id="bibtex_display" callback="formatCitations(bibtex_display)"></div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        </section>
+      </main>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+<footer role="contentinfo">
+<div class="container">
+
+</div>
+</footer>
+	
+</body>
+</html>
+{"mode":"full","isActive":false}
