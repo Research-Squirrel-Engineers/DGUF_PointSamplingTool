@@ -87,7 +87,7 @@ Here, the Point Sampling Tool serves as a workhorse, as it is designed to facili
 
 Two of the reviewers used the tool in their research and teaching (Klammt 2015; @schmidt_2016). Both focus on gathering information regarding the geographical settings of archaeological sites and analysing them statistically in respect to site evidence and settlement activities. The usage of the point sampling tool formed a necessary but hardly remarkable part of their research routine, so both did not expand on the tool in their theses. As the tool is probably also rarely cited by other authors, we name here some studies for which it could have been used since its first release in 2008: @miera_2020, @hinz_2014, @cappenberg_2020.
 
-This tool is being used in other disciplines as well, e.g. by digital cartographers (see, e.g. Arco 2013: https://digital-geography.com/qgis-plugins-point-sampling-tool/)
+Though useful for archaeological questions, the point sampling tool is a universal helper and not specifically shaped for archaeological use. Other disciplines employing it may be digital cartographers (see, e.g. Arco 2013: https://digital-geography.com/qgis-plugins-point-sampling-tool/), biologists, ecologists, environmentalsists or anyone using GIS software.
 
 #### Workflow of the QGIS Point Sampling Tool
 
@@ -95,35 +95,17 @@ The Python-based Point Sampling Tool extracts information from layers ("maps") l
 
 For multiband raster data the user has to decide which bands he wishes to sample (several bands at once are possible). For vector the attributes have to be selected - again it is possible to include all attributes. The number of resulting records is identical to the number of input points. For each vector layer only one geometry (feature) at one sampling point is taken into account, that is the last one in the processing, i.e. the one with the highest id. Therefore the point sampling tool can not be used for obtaining complete and fully controlled values form vector layers with several overlaying geometries. The latter could for example be the case for layers with overlapping buffers of sites or geographical feature that partly overlay each other.
 
-
-
-
-
-<!--- * :bangbang:**Is the claim to be able to answer a certain scientific question with the chosen workflow correct?** 
-
-The tool itself doesn't answer the scientific question, but simplifies the process of gaining information significantly. --->
-
-* :bangbang:**Have the algorithms been implemented correctly?**
-
-Ja.
-
-* :bangbang:**In what form is the software published?**
-
-The software is published as a QGIS python plugin: https://plugins.qgis.org/plugins/pointsamplingtool/ 
+The algorithms have been implemented correctly.
 
 ### Usability and target group orientation
+
+The software is published as a QGIS python plugin: https://plugins.qgis.org/plugins/pointsamplingtool/ .
 
 Since the Point sampling tool is a plugin, the software naturally requires the installation of the standalone QGIS software. Hardware requirements and possible limitations of QGIS itself are accordingly outside the scope of this review. 
 
 #### Installation
 
-* :bangbang:**How does the installation work and where is the software kept?** 
-
-- The installation follows along the routine of the QGIS Plugin dialog. As the tool is not part of the geo processing toolbox, it does not align to it in the menu, but users will find it from the drop down menu of "plugins". From long lasting experience in introductionary courses on QGIS, the authors underline, that this is a considerable threshold for archaeologists, who are not working constantly with QGIS but only occasionally for carrying certain tasks. Still, the sometimes for those users slightly confusing arrangement of the plugins in the menu is an overall usability backdrop of QGIS and not an issue that the point sampling tool is to blame for.
-
-<!---* :heavy_exclamation_mark:**Is it a stand-alone software or a web application?**
-
-- Standalone software
+The installation follows along the routine of the QGIS Plugin dialog. As the tool is not part of the geo processing toolbox, it does not align to it in the menu, but users will find it from the drop down menu of "plugins". From long lasting experience in introductionary courses on QGIS, the authors underline, that this is a considerable threshold for archaeologists, who are not working constantly with QGIS but only occasionally for carrying certain tasks. Still, this sometimes slightly confusing arrangement of the plugins in the menu is an overall usability backdrop of QGIS and not an issue that the point sampling tool is to blame for.
 
 <!---* :heavy_exclamation_mark:**Are necessary requirements in terms of hardware and operating system clearly documented?** 
 
@@ -136,7 +118,6 @@ Since the Point sampling tool is a plugin, the software naturally requires the i
 
 * :heavy_exclamation_mark:**Is use in Archaeology intended?**
 
-The point sampling tool is a universal helper and not specifically shaped for archaeological use.
 
 * **Does the menu navigation follow certain de-facto standards?**
 
