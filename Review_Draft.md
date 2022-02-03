@@ -131,13 +131,8 @@ Testing shows, that there are error messages as well as warnings. Errors encompa
 
 #### Performance and Robustness
 
-* **Is the implementation performant?** 
+The point-sampling-tools integrates seamlessly into the QGIS environment. In our test environment it ran stable and robust with datasets up to 16.000 points on buffer layers with significant geometric overlap. The process took less than a minute.
 
-The point-sampling-tools is integrating seamless into the QGIS environment.
-
-* :heavy_exclamation_mark:**Is the software robust?**
-
-Habe Punktelayer mit 16000 Punkten auf Bufferlayer mit umfanreichen geometrischen Überlagerungen getestet. Lief problemlos und un din wenige rals einer Minute.
 
 #### Help features, tutorials and community
 
