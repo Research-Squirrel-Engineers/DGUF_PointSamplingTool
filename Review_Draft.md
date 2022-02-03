@@ -125,9 +125,9 @@ Thirdly the tool does not allow identical field names for the resulting point la
 
 Finally the tool does not offer a temporary layer as result like (again) so many of the core plugins. Temporary layers would be an advantage when the sampling of points is a step within a workflow that aims for example to achieve the overall distribution of a position property measured on all measurement points. Here one just unnecessarily stores data, of an intermediate value.
 
-#### Error messages
+#### Communication with the user
 
-Testing shows, that there are error messages as well as warnings. Errors encompasses wrong or missing choices concerning the layers to be matched or identical fieldnames. A warning is given when layers of different coordination reference systems are concerned. As it is warning you can override this, which allows seamless working with data that might have false metadata. And short phrases as status support the user in solving errors and problems.
+Testing shows, that there are error messages as well as warnings. Errors encompass wrong or missing choices concerning the layers to be matched or identical fieldnames. A warning is given when layers of different coordination reference systems are used. As it is only warning it is possible to override the message. This allows seamless working with data that might have false metadata. Short status messages support the user in solving errors and problems.
 
 #### Performance and Robustness
 
