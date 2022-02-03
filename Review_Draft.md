@@ -113,7 +113,9 @@ The installation follows along the routine of the QGIS Plugin dialog. As the too
 
 #### Interface
 
-The Graphical User Interface follows the rather decent overall design and logic of the QGIS tool dialogues. As that it opens up with an assistant that gives the user full control to chose the layer that holds as points the locations as well as the layers to be sampled. Furthermore the user has to indicate which attribute-values from the source and the sample layer(s) should be part of the resulting new point layer. As it comes to raster data this means the selection of the raster band. A second tab gives a preview of the attribute table. The third, as it is the convention for QGIS Plugins, informs about the tool. Here the warning, that the tool does not align to multipoint-features, is placed relatively well. There is however no logfile, that facilitates the documentation and by that the reproducibility.
+The plugin comes in English only.
+
+The Graphical User Interface follows the rather decent overall design and logic of the QGIS tool dialogues: It opens up with an assistant that gives the user full control to chose the layer that holds as points the locations as well as the layers to be sampled. Furthermore the user has to indicate which attribute-values from the source and the sample layer(s) should be part of the resulting new point layer. As it comes to raster data this means the selection of the raster band. A second tab gives a preview of the attribute table. The third, as it is the convention for QGIS Plugins, informs about the tool. Here the warning, that the tool does not align to multipoint-features, is placed relatively well. There is however no logfile, that facilitates the documentation and by that the reproducibility.
 
 Here we feel that the usability offers certain thresholds. Firstly it would add to the usability, if one can include into the process also layers, which are not actively in display. Wherever granular vector data are involved QGIS considerably slows on computers which do not apply to special requirements of large data processing. Here often a workaround is to not display the data while processing them. From our experience researchers and students rely mostly on lesser powerful hardware. 
 
@@ -123,11 +125,7 @@ Thirdly the tool does not allow identical field names for the resulting point la
 
 Finally the tool does not offer a temporary layer as result like (again) so many of the core plugins. Temporary layers would be an advantage when the sampling of points is a step within a workflow that aims for example to achieve the overall distribution of a position property measured on all measurement points. Here one just unnecessarily stores data, of an intermediate value.
 
-* **Is the programme multilingual, and in which languages is it offered?**
-
-The plugin comes in english only. 
-
-* **Are error messages easily understandable by reviewers?**
+#### Error messages
 
 Testing shows, that there are error messages as well as warnings. Errors encompasses wrong or missing choices concerning the layers to be matched or identical fieldnames. A warning is given when layers of different coordination reference systems are concerned. As it is warning you can override this, which allows seamless working with data that might have false metadata. And short phrases as status support the user in solving errors and problems.
 
