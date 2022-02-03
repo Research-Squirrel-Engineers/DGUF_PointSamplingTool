@@ -113,14 +113,6 @@ The installation follows along the routine of the QGIS Plugin dialog. As the too
 
 #### Interface
 
-* :heavy_exclamation_mark:**Is the user interface suitable for the user group?**
-
-
-* :heavy_exclamation_mark:**Is use in Archaeology intended?**
-
-
-* **Does the menu navigation follow certain de-facto standards?**
-
 The Graphical User Interface follows the rather decent overall design and logic of the QGIS tool dialogues. As that it opens up with an assistant that gives the user full control to chose the layer that holds as points the locations as well as the layers to be sampled. Furthermore the user has to indicate which attribute-values from the source and the sample layer(s) should be part of the resulting new point layer. As it comes to raster data this means the selection of the raster band. A second tab gives a preview of the attribute table. The third, as it is the convention for QGIS Plugins, informs about the tool. Here the warning, that the tool does not align to multipoint-features, is placed relatively well. There is however no logfile, that facilitates the documentation and by that the reproducibility.
 
 Here we feel that the usability offers certain thresholds. Firstly it would add to the usability, if one can include into the process also layers, which are not actively in display. Wherever granular vector data are involved QGIS considerably slows on computers which do not apply to special requirements of large data processing. Here often a workaround is to not display the data while processing them. From our experience researchers and students rely mostly on lesser powerful hardware. 
