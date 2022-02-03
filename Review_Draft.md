@@ -87,7 +87,7 @@ Here, the Point Sampling Tool serves as a workhorse, as it is designed to facili
 
 Two of the reviewers used the tool in their research and teaching (Klammt 2015; @schmidt_2016). Both focus on gathering information regarding the geographical settings of archaeological sites and analysing them statistically in respect to site evidence and settlement activities. The usage of the point sampling tool formed a necessary but hardly remarkable part of their research routine, so both did not expand on the tool in their theses. As the tool is probably also rarely cited by other authors, we name here some studies for which it could have been used since its first release in 2008: @miera_2020, @hinz_2014, @cappenberg_2020.
 
-Though useful for archaeological questions, the point sampling tool is a universal helper and not specifically shaped for archaeological use. Other disciplines employing it may be digital cartographers (see, e.g. Arco 2013: https://digital-geography.com/qgis-plugins-point-sampling-tool/), biologists, ecologists, environmentalsists or anyone using GIS software.
+Though useful for archaeological questions, the point sampling tool is a universal helper and not specifically shaped for archaeological use. Other disciplines employing it may be digital cartographers (see, e.g. Arco 2013: https://digital-geography.com/qgis-plugins-point-sampling-tool/), biologists or ecologists (http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Object-based_classification_(Tutorial)) or anyone using GIS software.
 
 #### Workflow of the QGIS Point Sampling Tool
 
@@ -136,24 +136,15 @@ The point-sampling-tools integrates seamlessly into the QGIS environment. In our
 
 #### Help features, tutorials and community
 
-* :bangbang:**Are there enough tutorials for learning the software?**
+There are no tutorials offered by QGIS or the developer themselves but the very short README on github. The sheer number of downloads <!--(do we have a number?) --> shows though, this tool is widely used. A short online search brings up a number of tutorials from users, teachers and university courses. An example may be the blog post by Scott Arco: https://digital-geography.com/qgis-plugins-point-sampling-tool/ , the tutorial by Ujaval Ghandi: http://www.qgistutorials.com/en/docs/sampling_raster_data.html or the YouTube tutorual by Yannick Kremer: https://www.youtube.com/watch?v=bAyxLC3npCA.
 
-There are no tutorials offered by QGIS itself (Documentation?), but according to the wide use of the tool, indicated by the sheer number of downloads) there are tutorials from users, teachers and university courses on the internet. This is especially helpful, as they come in a variety of languages like French, Spanish and Portugese, so its use in an international context with multilingual research teams is facilitated.
+This is especially helpful, as they come in a variety of languages like French (https://www.youtube.com/watch?v=QdkOPXssapg), Spanish (https://www.cursosgis.com/como-trabaja-el-complemento-point-sampling-tool-en-qgis/) and Polish (https://www.youtube.com/watch?v=KicHepZNaKA), so its use in an international context with multilingual research teams is facilitated.
 
-* :heavy_exclamation_mark:**Do test data sets exist for the software?**
+If one wishes to gain more information, there are several points of departure (QGIS Documentation, the QGIS plugin repository  that leads the user to the code repository of the plugin at github ([https://github.com/borysiasty/pointsamplingtool](https://github.com/borysiasty/pointsamplingtool). Additionally the [QGIS Plugin repository](https://plugins.qgis.org/plugins/) gives a thorough description of the tool and its main objectives as well as a list of the versions history ([Point sampling tool](https://plugins.qgis.org/plugins/pointsamplingtool/)).  
 
-I don't think so 
-
-* **Is further information on the software easy to find?**
-
-There are several points of departure (QGIS Documentation, the QGIS plugin repository  that leads the user to the code repository of the plugin at github ([https://github.com/borysiasty/pointsamplingtool](https://github.com/borysiasty/pointsamplingtool). Additionally the [QGIS Plugin repository](https://plugins.qgis.org/plugins/) gives a thorough description of the tool and its main objectives as well as a list of the versions history ([Point sampling tool](https://plugins.qgis.org/plugins/pointsamplingtool/)).  
-
-<!--- * :bangbang:**Is the software supported by a community, and what proportion are classical and ancient studies scholars?** -->
+There do not exist any specific training data for this plugin, as there is no official tutorial. Nonetheless any GIS course data can be used, that incorporates point data alongside vector and/or raster data.
 
 
-* :heavy_exclamation_mark:**Are there archaeological best practices or publications that refer to the reviewed software?**
-
-No, but this won't make any sense in respect to the task the tool carries out.
 
 #### Data ingest, interoperability and programming interfaces
 
