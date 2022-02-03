@@ -85,17 +85,19 @@ In archaeology, the analysis of site factors of settlements and the correlation 
 
 Here, the Point Sampling Tool serves as a workhorse, as it is designed to facilitate the task of obtaining values of overlying geographic features such as soil types at points of interest: The geographic information are stored in maps, that can be digitized or - increasingly so - are generated born digital. Once the information is held geo-referenced and in a GIS compatible format and the location of sites is held in a digital format as well, the QGIS point sampling tool can be used to transfer the relevant information from the maps to the site location, by adding them as attributes to the geometry of the points in request. The output table can then be further analysed according to the archaeological question.
 
+Two of the reviewers used the tool in their research and teaching (Klammt 2015; @schmidt_2016). Both focus on gathering information regarding the geographical settings of archaeological sites and analysing them statistically in respect to site evidence and settlement activities. The usage of the point sampling tool formed a necessary but hardly remarkable part of their research routine, so both did not expand on the tool in their theses. As the tool is probably also rarely cited by other authors, we name here some studies for which it could have been used since its first release in 2008: @miera_2020, @hinz_2014, @cappenberg_2020.
+
+This tool is being used in other disciplines as well, e.g. by digital cartographers (see, e.g. Arco 2013: https://digital-geography.com/qgis-plugins-point-sampling-tool/)
+
 #### Workflow of the QGIS Point Sampling Tool
 
 The Python-based Point Sampling Tool extracts information from layers ("maps") loaded to QGIS at points specified by a point layer and adds this information to the attribute table of the points. It is capable of sampling both multiple raster and vector layers within QGIS simultaneously. In doing so, it follows a routine that addresses the vector layers first and then the raster data (if both data types are included at the same time). This process sequence also determines the arrangement of the attribute fields. 
 
 For multiband raster data the user has to decide which bands he wishes to sample (several bands at once are possible). For vector the attributes have to be selected - again it is possible to include all attributes. The number of resulting records is identical to the number of input points. For each vector layer only one geometry (feature) at one sampling point is taken into account, that is the last one in the processing, i.e. the one with the highest id. Therefore the point sampling tool can not be used for obtaining complete and fully controlled values form vector layers with several overlaying geometries. The latter could for example be the case for layers with overlapping buffers of sites or geographical feature that partly overlay each other.
 
-Two of the reviewers used the tool in their research and teaching (Klammt 2015; @schmidt_2016). Both focus on gathering information regarding the geographical settings of archaeological sites and analysing them statistically in respect to site evidence and settlement activities. The usage of the point sampling tool formed a necessary but hardly remarkable part of their research routine, so both did not expand on the tool in their theses. As the tool is probably also rarely cited by other authors, we name here some studies for which it could have been used since its first release in 2008: @miera_2020, @hinz_2014, @cappenberg_2020.
 
 
 
-Blog post: https://digital-geography.com/qgis-plugins-point-sampling-tool/
 
 <!--- * :bangbang:**Is the claim to be able to answer a certain scientific question with the chosen workflow correct?** 
 
