@@ -148,39 +148,29 @@ There do not exist any specific training data for this plugin, as there is no of
 
 #### Data ingest, interoperability and programming interfaces
 
-* :bangbang:**Which data formats are read in and how?**
+Every dataformat supported in QGIS can be read in. Still, matching the task it is supposed to perform, only point feature (no multipoints) can serve as input layers. The results of the process are outputed as Geopackage (dgpk) by default, csv and shapefile are as well offered.
 
-- Every dataformat supported in QGIS. Still, matching the task it is supposed to perform, only point feature (no multipoints) can serve as input layers.   
+The QGIS plugin does not offer a batch process. The input data and the parameters have to be manually chosen via the GUI. As stated in the context of the usability of the GUI this is a disadvantage.
 
-* :bangbang:**Which output data formats are supported?**
-
-The results of the process are outputed as Geopackage (dgpk) by default, csv and shapefile are as well offered.
-
-* :heavy_exclamation_mark:**How can data be read in? Does the software allow batch processing?**
-
-The QGIS plugin does not offer a batch process. The input data and the parameters have to be manually chosen via the GUI. As stated in the context of the usability of the GUI this is a backdrop.
-
-
-* :bangbang:**Is there an application programming interface (API)?**
 The plugin support the QGIS processing API, which allows this plugin to be integrated into other QGIS (batch) proccessing tasks. 
 
-
-<!--- >#### Conformity with regulations on data protection and data minimisation
-
-* **Does the software comply with the laws (e.g. on data protection, map displays, etc.) of the country of assignment?**
-
-* **What data does the application store, for what purpose and for how long? Are data transferred to third parties?** -->
 
 ### Developer perspective
 
 From the perspective of a developer whose intention it is to modify and/or extend the software, several crucial things are important and also met by the software we are reviewing. At first, we need to remark that an extension of the software is enabled by the software being published on Github and is licensed under the GNU GPL license. This license not only enables other developers to reuse the software, but also the modification of the software for their own uses under the condition that the software is published under the same license.
 As an open license which intends to promote the usage of free software, we think that this license is a good choice for a QGIS plugin. 
+
 To get developers encouraged to work and extend a software, a clear and concise documentation of its purpose along with examples and a documented source code is very benefitial. In the case of the PointSampling Tool we can see that the software itself contains many comments in the given Python source code and it does not provide a HTML documentation which might give it a better accessibility especially for novice programmers. However, we must also acknowledge that the actual source code needed to execute the PointSampling Tool QGIS plugin is very limited and manageable, so one might argue that this is not hindering developers to get into extending the plugin.
 As with any QGIS Python plugin being developed, the process to set up a plugin and to create QGIS plugins in general is well-documented by the QGIS application framework itself, so that the developer is in no immediate need to provide the documentation itself. It is in the nature of QGIS plugins that also not compilation process of the source code or other steps to build the application are needed, so that we can conclude that the building process is well-documented and easily comprehensible for the average developer.
+
 However, what is not immediately obvious for a developer is the current state of implementation and application examples of the application. For this publication, we created example data to test the functionality of the QGIS Plugin - something a developer who wants to extend the plugin also needs to do in order to learn about all the plugin's features. Here, a developer would expect either some documented tests on how the functionality of the plugin could be assessed or example data which could be provided in the project repository which helps to sharpen the intention of the plugin as provided by the author.
+
 Besides providing this insight for a developer, sample data can also be vital to explain the usefulness of a plugin for a new user or user group, so that we recommend the creation of a small tutorial page either on Github or another linked web resource.
+
 Something we found very positive when reviewing the software was that feature requests and issues visible on Github have to the date of this review all been answered by the core developer and the developer has accepted pull requests of other programmers to extend the functionality of the plugin with ideas of the community. This shows a continued interest of the developer to care about the plugin. The fact, that the plugin did not receive frequent updates before the time of this review could be interpreted as a lack of interest of the developer, however it was our perception, that the main features of the plugin have now been implemented and that there is simply no need of a further active development at the present time.
+
 Despite the perceived interest of the developer we would welcome a contribution guide, a small guide in which the developer states which extensions to the plugin are welcomed and in which form.
+
 Finally, one could judge the quality of the implementation which has several aspects to consider. Because the software to be reviewed is a QGIS Plugin, certain constraints concerning its implementation are given by requirements on how a QGIS plugin is to be implemented. Therefore, these fundamental implementations details fall out of the judgement of this review. To get an idea about the quality of the actual implementation we refer to the testcases we have created for this publication in which we investigate the resutls of the plugin for various predefined datasets.
 
 TESTCASE HERE?
