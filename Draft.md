@@ -229,7 +229,7 @@ I don't think so. But: der code ist kommentiert und dort finden sich auch Hinwei
 
 * :heavy_exclamation_mark:**Is the software being actively worked on?**
 
-From the perspective of the reviewers the software is activley maintained by almost entirely one developer. Pull requests are open but the problems solved or otherwise commented. 
+From the perspective of the reviewers the software is actively maintained by almost entirely one developer. Pull requests are open but the problems solved or otherwise commented. 
 
 * :bangbang:**Is it possible to support software development?**
  The software development can be supported and has been supported, as proven by a number of accepted pull requests in the Github repository. However, the developed does not give a guideline as to how he expects contributions to be submitted (contribution guideline). The developer also does not describe a roadmap of a goals as to which functions might be implemented in later versions. This might give other developers an orientation as to which contributions might be useful to make. However, one might argue that the developer might consider his work to be finished or the tool sufficiently apt for use in QGIS. In that case, there are possibly no future plans apart from maintaining the software.
