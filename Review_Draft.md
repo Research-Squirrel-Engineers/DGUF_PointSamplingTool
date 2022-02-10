@@ -198,4 +198,9 @@ The test was carried out with QGIS vers. 3.10, Coruna, on a Notebook (Intel Core
 
 ---
 
+## Notes
+
+<a name="#authornote">*</a>: Authors are listed in alphabetical order.
+
+## Bibliography
 
