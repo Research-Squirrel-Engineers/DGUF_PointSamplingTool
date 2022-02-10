@@ -1,8 +1,10 @@
 ---
 title: Software Review for the Software PointSamplingTool
 
-abstract_de: 
-abstract_en: 
+abstract_de: Das QGIS Point sampling tool von Borys Jurgiel ist ein QGIS plugin, mit dem Punkte Werte aus überlagernden Vektor- und Rasterlayern gewinnen, indem Attribute zur Geometrie der angeforderten Punkte hinzugefügt werden. Es handelt sich um ein allgemeines Tool, das aber besonders geeignet ist, um archäologische Analysen zu Standortbedingungen und naturräumlichen Faktoren zu unterstützen. Der Review betracht das Open Source Werkzeug unter den Aspekten der Nutzerführung, der Verlässlichkeit und Performanz sowie seiner möglichen Erweiterbarkeit. 
+
+abstract_en: The QGIS Point sampling tool by Borys Jurgiel is a QGIS plugin that allows points to extract values from overlaying vector and raster layers by adding attributes to the geometry of the requested points. It is not a specific research tool, but is particularly suitable for supporting archaeological analyses of, for example, site conditions and natural factors. The review considers the open source tool under the aspects of user guidance, reliability and performance as well as its possible extensibility. 
+
 layout: draft
 author:
   -
@@ -16,16 +18,6 @@ author:
     orcid: 0000-0003-3697-9241
     bio: "Archaeologist Anne Klammt completed her doctorate on a landscape archaeology topic and has been responsible for the further development of Digital Art History at the German Forum for Art History Paris as Head of Research since 2020."
   -
-    name: Hubert Mara
-    affiliation: mainzed & Hochschule Mainz
-    orcid: 0000-0002-2004-4153
-    bio: "Hubert Mara studied computer science at the Vienna University of Technology. There he already worked on digital methods in archaeology for ceramic analysis. He was subsequently a Marie Curie Fellow at the University of Florence within the framework of the *Cultural Heritage Informatics Research Oriented Network* (CHIRON). He completed his doctorate at the University of Heidelberg in the *Interdisciplinary Centre for Scientific Computing* (IWR). There he developed the [*GigaMesh Software Framework*](https://gigamesh.eu) and installed the *Forensic Computational Geometry Laboratory* (FCGL). Since June 2020, he has been the managing director of mainzed and is a researcher at the Institute for Spatial Information and Measurement Technology at Mainz University of Applied Sciences."
-  -  
-    name: Clemens Schmid
-    affiliation: Max Planck Institute for the Science of Human History
-    orcid: 0000-0003-3448-5715
-    bio: "Clemens Schmid studied prehistoric, historical and scientific archaeology as well as computer science in Tübingen and Kiel. After graduating, he worked with computational data analysis in various archaeological research projects at the University of Kiel, the Roman-Germanic Central Museum in Mainz and the University of Bern. Now he is employed for a PhD project on quantitative estimation of past human mobility with ancient genetic and historical-linguistic data at the Department of Archaeogenetics of the Max Planck Institute for the Science of Human History in Jena."
-  -
     name: Sophie Charlotte Schmidt
     affiliation: Freie Universität Berlin
     orcid: 0000-0003-4696-2101
@@ -36,10 +28,6 @@ author:
     orcid: 0000-0002-3246-3531
     bio: "Florian Thiery studied geodesy and is a Research Software Engineer (RSE) in the *Scientific IT, Digital Platforms and Tools* department at the Römisch-Germanisches Zentralmuseum in Mainz. He is the initiator of the *Research Squirrel Engineers*, a network for RSEs in the Digital Humanities that pursues community projects with a focus on free and open data, as well as Linked Open Data. As part of a fellowship of the *Wikimedia Fellow-Programm Freies Wissen*, he is working on the modelling of Irish ᚑᚌᚆᚐᚋ (Ogham) stones and their publication in the Wikimedia universe."    
   -
-    name: Martina Trognitz
-    affiliation: Austrian Centre for Digital Humanities and Cultural Heritage, ÖAW Wien
-    orcid: 0000-0003-0485-6861
-    bio: "Martina Trognitz studied computational linguistics and classical archaeology in Heidelberg. From 2012 to 2017, she worked in the IANUS project at the German Archaeological Institute. Since 2017, she has been in charge of the digital archive ARCHE of the ACDH-CH at the Austrian Academy of Sciences. She is working on a PhD project on the machine analysis of multi-sided Aegean seals of the Bronze Age."
 
 
 bibliography: bibliography.bib
