@@ -184,7 +184,8 @@ The test was carried out with QGIS vers. 3.10, Coruna, on a Notebook (Intel Core
 
 ### figure captions
 
-Fig. 1 Randomly chosen location of sampling points (layer A) in Northern Germany. Geodata: Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODb. Image: authors.
+![Testdata 1](images/testdata1_vers1.tiff)
+*Fig. 1 Randomly chosen location of sampling points (layer A) in Northern Germany. Geodata: Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODb. Image: authors*
 
 Fig. 2 Sampling points layer A (blue dots) and layer B (yellow dots) with slight offset. Image: authors.
 
