@@ -74,7 +74,7 @@ The latest stable version is 0.5.3
 - Short description: *QGIS plugin for sampling polygon attributes and raster values from multiple layers at specified sampling points*.
 - Reviewed version: *0.5.3*.
 - Platform: *Windows, MacOS, Linux*.
-- Website: *https://plugins.qgis.org/plugins/pointsamplingtool/*.
+- Website: *[https://plugins.qgis.org/plugins/pointsamplingtool/](https://plugins.qgis.org/plugins/pointsamplingtool/)*.
 - Licensing: *"Open Source with GNU General Public License (GPL)"*.
 - Costs: *free of charge*.
 - Input and output formats: *geo-vector data formats (ESRI Shapefile, Geopackage, . ...), geo-raster data formats (GeoTIFF, ...), "table data" (CSV, TXT, ...)* .
@@ -99,7 +99,7 @@ The algorithms have been implemented correctly.
 
 ### Usability and target group orientation
 
-The software is published as a QGIS python plugin: https://plugins.qgis.org/plugins/pointsamplingtool/ .
+The software is published as a QGIS python plugin: [https://plugins.qgis.org/plugins/pointsamplingtool/](https://plugins.qgis.org/plugins/pointsamplingtool/) .
 
 Since the Point sampling tool is a plugin, the software naturally requires the installation of the standalone QGIS software. Hardware requirements and possible limitations of QGIS itself are accordingly outside the scope of this review. 
 
@@ -185,12 +185,15 @@ The test was carried out with QGIS vers. 3.10, Coruna, on a Notebook (Intel Core
 ### figure captions
 
 ![Testdata 1](images/testdata1_vers1.png)
+
 *Fig. 1 Randomly chosen location of sampling points (layer A) in Northern Germany. Geodata: Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODb. Image: authors*
 
 ![Testdata 2](images/testdata2_vers1.png)
+
 *Fig. 2 Sampling points layer A (blue dots) and layer B (yellow dots) with slight offset. Image: authors.*
 
 ![Testdata 2](images/testdata3_vers1.png)
+
 *Fig. 3 Detail with only some of the polygons of layer C and their ID. The sample of the point in the upper left corner is taken of the polygon "ID 48". Image: authors.*
 
 ---
