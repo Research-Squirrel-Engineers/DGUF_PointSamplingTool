@@ -85,7 +85,7 @@ In archaeology, the analysis of site factors of settlements and the correlation 
 
 Here, the Point Sampling Tool serves as a workhorse, as it is designed to facilitate the task of obtaining values of overlying geographic features such as soil types at points of interest: The geographic information are stored in maps, that can be digitized or - increasingly so - are generated born digital. Once the information is held geo-referenced and in a GIS compatible format and the location of sites is held in a digital format as well, the QGIS point sampling tool can be used to transfer the relevant information from the maps to the site location, by adding them as attributes to the geometry of the points in request. The output table can then be further analysed according to the archaeological question.
 
-Two of the reviewers used the tool in their research and teaching (@Klammt_2015, @schmidt_2016). Both focus on gathering information regarding the geographical settings of archaeological sites and analysing them statistically in respect to site evidence and settlement activities. The usage of the point sampling tool formed a necessary but hardly remarkable part of their research routine, so both did not expand on the tool in their theses. As the tool is probably also rarely cited by other authors, we name here some studies for which it could have been used since its first release in 2008: @miera_2020, @hinz_2014, @cappenberg_2020.
+Two of the reviewers used the tool in their research and teaching ([@Klammt_2015](#Klammt_2015), [@schmidt_2016](#schmidt_2016)). Both focus on gathering information regarding the geographical settings of archaeological sites and analysing them statistically in respect to site evidence and settlement activities. The usage of the point sampling tool formed a necessary but hardly remarkable part of their research routine, so both did not expand on the tool in their theses. As the tool is probably also rarely cited by other authors, we name here some studies for which it could have been used since its first release in 2008: [@miera_2020](#miera_2020), [@hinz_2014](#hinz_2014]), [@cappenberg_2020](#cappenberg_2020).
 
 Though useful for archaeological questions, the point sampling tool is a universal helper and not specifically shaped for archaeological use. Other disciplines employing it may be digital cartographers (see, e.g. Arco 2013: https://digital-geography.com/qgis-plugins-point-sampling-tool/), biologists or ecologists (http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Object-based_classification_(Tutorial)) or anyone using GIS software.
 
@@ -184,18 +184,15 @@ The test was carried out with QGIS vers. 3.10, Coruna, on a Notebook (Intel Core
 
 ### figure captions
 
-![Testdata 1](images/testdata1_vers1.tiff)
+![Testdata 1](images/testdata1_vers1.png)
 *Fig. 1 Randomly chosen location of sampling points (layer A) in Northern Germany. Geodata: Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODb. Image: authors*
 
-Fig. 2 Sampling points layer A (blue dots) and layer B (yellow dots) with slight offset. Image: authors.
+![Testdata 2](images/testdata2_vers1.png)
+*Fig. 2 Sampling points layer A (blue dots) and layer B (yellow dots) with slight offset. Image: authors.*
 
-Fig. 3 Detail with only some of the polygons of layer C and their ID. The sample of the point in the upper left corner is taken of the polygon "ID 48". Image: authors.
+![Testdata 2](images/testdata3_vers1.png)
+*Fig. 3 Detail with only some of the polygons of layer C and their ID. The sample of the point in the upper left corner is taken of the polygon "ID 48". Image: authors.*
 
 ---
 
-| fig. | file |
-| --- | --- |
-| fig. 1 | images/testdata1_vers1.tiff |
-| fig. 2 | images/testdata3_vers1.tiff |
-| fig. 3 | images/testdata2_vers1.tiff |
 
