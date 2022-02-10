@@ -64,7 +64,7 @@ keywords_en:
 
 # Software Review for the Software PointSamplingTool
 
-The QGIS Point sampling tool by Borys Jurgiel is a QGIS plugin, which samples polygon attributes and raster values from multiple layers at specified sampling points: https://plugins.qgis.org/plugins/pointsamplingtool/ .
+The QGIS Point sampling tool by Borys Jurgiel is a QGIS plugin, which samples polygon attributes and raster values from multiple layers at specified sampling points: [https://plugins.qgis.org/plugins/pointsamplingtool/](https://plugins.qgis.org/plugins/pointsamplingtool/) .
 
 The latest stable version is 0.5.3
 
