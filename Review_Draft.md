@@ -1,9 +1,9 @@
 ---
 title: Software Review for the Software PointSamplingTool
 
-abstract_de: Das QGIS Point sampling tool von Borys Jurgiel ist ein QGIS plugin, mit dem Punkte Werte aus überlagernden Vektor- und Rasterlayern gewinnen, indem Attribute zur Geometrie der angeforderten Punkte hinzugefügt werden. Es handelt sich um ein allgemeines Tool, das aber besonders geeignet ist, um archäologische Analysen zu Standortbedingungen und naturräumlichen Faktoren zu unterstützen. Der Review betracht das Open Source Werkzeug unter den Aspekten der Nutzerführung, der Verlässlichkeit und Performanz sowie seiner möglichen Erweiterbarkeit. 
+abstract_de: Das QGIS Point sampling tool von Borys Jurgiel ist ein QGIS plugin, mit dem an definierten Punkten Werte aus überlagernden Vektor- und Rasterlayern gewonnen werden können. Die ausgelesenen Werte werden zu der Attributtabelle des genutzten Punktelayers hinzugefügt. Es handelt sich um ein allgemeines Tool, das aber besonders geeignet ist, um archäologische Analysen zu Standortbedingungen und naturräumlichen Faktoren zu unterstützen. Der Review betracht das Open Source Werkzeug unter den Aspekten der Nutzerführung, der Verlässlichkeit und Performanz sowie seiner möglichen Erweiterbarkeit. 
 
-abstract_en: The QGIS Point sampling tool by Borys Jurgiel is a QGIS plugin that allows points to extract values from overlaying vector and raster layers by adding attributes to the geometry of the requested points. It is not a specific research tool, but is particularly suitable for supporting archaeological analyses of, for example, site conditions and natural factors. The review considers the open source tool under the aspects of user guidance, reliability and performance as well as its possible extensibility. 
+abstract_en: The QGIS Point sampling tool by Borys Jurgiel is a QGIS plugin that allows to extract values from overlaying vector and raster layers at specified points. The values are added to the attribute table of the used points layer. It is not a specific research tool, but is particularly suitable for supporting archaeological analyses of, for example, site conditions and natural factors. The review considers the open source tool under the aspects of user guidance, reliability and performance as well as its possible extensibility. 
 
 layout: draft
 author:
