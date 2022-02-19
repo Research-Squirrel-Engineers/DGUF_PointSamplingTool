@@ -157,15 +157,18 @@ Finally, one could judge the quality of the implementation which has several asp
 ### Test case
 
 We tested the software to observe, how the point sampling tool copes with overlapping polygons, and secondly to check the performance on a rather large dataset. For this purpose we selected more or less randomly a rectangular area of 240 x 160 km in northern Germany and created two layers with point features and one with polygon features. 
-The first point layer (A) comprises 360 features spaced 10.000 m apart (fig. 1). These points were buffered with a radius of 22.000 m (polygon layer C) so that each point effectively lies in several overlapping circular buffers. 
 
-The second point layer (B) consists of 16.905 features spaced 1.500 m apart, with a slight offset from point layer A (fig. 2). The point samples of layers A and B were taken on polygon layer C. The resulting point layers were stored as GeoPackages (GPKG).
+The first point layer (A) comprises 360 features spaced 10.000 m apart (fig. 1). These points were buffered with a radius of 22.000 m (polygon layer C) so that each point effectively lies in several overlapping circular buffers. To layer C a second value column was added for further testing.
 
-When sampling from layer A to C, we found that if the polygons overlap (six for the top left point and 13 for a point in the middle in the test case), the tool samples the polygon with the highest value as the ID (fig. 3).
+The second point layer (B) consists of 16.905 features spaced 1.500 m apart, with a slight offset from point layer A (fig. 2). The value samples of the points of layers A and B were taken on the polygon layer C. The resulting point layers were stored as GeoPackages (GPKG).
 
-Using the sampling tool on Layer B shows that the process did not finish for 12 minutes due to the large amount of points. During the process, QGIS was not able to perform other tasks in parallel. It should be noted, however, that the sheer volume of points seems to us to be a rather unusual use case for archaeology. 
+When sampling from layer A to C, we found that if the polygons overlap (six for the top left point and 13 for a point in the middle in the test case), the tool samples the polygon with the highest value as the ID (fig. 3). It does not matter whether the sampled variable is a numerical value or a character element. The process takes about ten seconds.
 
-The test was carried out with QGIS vers. 3.10, Coruna, on a Notebook (Intel Core i5-8265U bits) with Linux Mint 20.1. The test data and a visualisation are available at <https://github.com/Research-Squirrel-Engineers/pointsamplingtool-testdata>.
+Using the sampling tool with Layer B shows that the process took about double the time. Taking several variables from the polygon layer increases the needed time. Nonetheless, the algorithm ran steadily, which can be observed with the status counter, which prints at which point the sampling algorithm is working at the moment. 
+
+The tests were carried out with QGIS vers. 3.10, Coruna, on a Notebook (Intel Core i5-8265U bits) with Linux Mint 20.1 and on QGIS vers. 3.16, Hannover, on a Intel Core i3-6100U notebook running Kubuntu 18.04. These are no high end machines, therefore suitable for testing a tool used by chronically underfinanced researchers.
+
+The test data and a visualisation are available at <https://github.com/Research-Squirrel-Engineers/pointsamplingtool-testdata>.
 
 ------------------------------------------------------------------------
 
