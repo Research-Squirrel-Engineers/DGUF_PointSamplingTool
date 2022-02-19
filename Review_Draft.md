@@ -21,7 +21,7 @@ author:
     name: Sophie Charlotte Schmidt
     affiliation: Freie Universität Berlin
     orcid: 0000-0003-4696-2101
-    bio: "Sophie C. Schmidt studied Ancient Studies and Prehistoric Archaeology at the Free University of Berlin. She then worked as a research assistant in the field of archaeoinformatics at the universities of Cologne and Bonn, and at the NFDI4Objects consortium project at the German Archaeological Institute. Right now she works on her PhD project on 5th mill. BC in Brandenburg at the Free University Berlin."    
+    bio: "Sophie C. Schmidt studied Ancient Studies and Prehistoric Archaeology at the Free University of Berlin. She then was employed as a research assistant in the field of archaeoinformatics at the universities of Cologne and Bonn, and at the NFDI4Objects consortium project at the German Archaeological Institute. Right now she works on her PhD project on 5th mill. BC in Brandenburg at the Free University Berlin."    
   -
     name: Florian Thiery
     affiliation: Römisch-Germanisches Zentralmuseum – Leibniz-Forschungsinstitut für Archäologie
@@ -87,17 +87,12 @@ The algorithms have been implemented correctly.
 
 The software is published as a QGIS python plugin: <https://plugins.qgis.org/plugins/pointsamplingtool/> .
 
-Since the Point sampling tool is a plugin, the software naturally requires the installation of the standalone QGIS software. Hardware requirements and possible limitations of QGIS itself are accordingly outside the scope of this review.
+Since the Point sampling tool is a plugin, the software naturally requires the installation of the standalone QGIS software (a version of the Point sampling tool is available for each major QGIS release). Hardware requirements and possible limitations of QGIS itself are accordingly outside the scope of this review.
 
 #### Installation
 
-The installation follows along the routine of the QGIS Plugin dialog. As the tool is not part of the geo processing toolbox, it does not align to it in the menu, but users will find it from the drop down menu of "plugins". From long lasting experience in introductionary courses on QGIS, the authors underline, that this is a considerable threshold for archaeologists, who are not working constantly with QGIS but only occasionally for carrying certain tasks. Still, this sometimes slightly confusing arrangement of the plugins in the menu is an overall usability setting of QGIS and not an issue that the Point sampling tool is to be blamed for.
+The installation follows along the routine of the QGIS Plugin dialog. As the tool is not part of the geo processing toolbox, it does not align to it in the menu, but users will find it from the drop down menu of "plugins" (under "Analysis" in later QGIS versions). From long lasting experience in introductionary courses on QGIS, the authors underline, that this is a considerable threshold for archaeologists, who are not working constantly with QGIS but only occasionally for carrying certain tasks. Still, this sometimes slightly confusing arrangement of the plugins in the menu is an overall usability setting of QGIS and not an issue that the Point sampling tool is to be blamed for.
 
-```{=html}
-<!---* :heavy_exclamation_mark:**Are necessary requirements in terms of hardware and operating system clearly documented?** 
-
-- No, but one might infer them from QGIS --->
-```
 #### Interface
 
 The plugin comes in English only.
@@ -106,19 +101,23 @@ The Graphical User Interface follows the rather decent overall design and logic 
 
 Here we feel that the usability offers certain thresholds. Firstly, it would add to the usability, if one could include into the process also layers, which are not actively in display. Wherever granular vector data are involved QGIS considerably slows on computers which do not meet the special requirements of large data processing. A workaround applied often is to not display the data while processing them. From our experience researchers and students rely mostly on less powerful hardware.
 
-Secondly, depending on the number of fields the input point and the overlayed layers carry the selection of the attribute-fields quickly becomes confusing, tiring and facilitates errors. As for example geodata on soil types often bring a quantity of attribute fields, this may concern archaeologists. A possible solution could be a partition of the dialogues between source and overlayed layers as shown by the core plugin "intersection" for the geoprocessing of vector layers.
+Secondly, depending on the number of fields the input point and the overlayed layers carry the selection of the attribute-fields quickly becomes confusing, tiring and facilitates errors. As an example, geodata on soil types often bring a quantity of attribute fields, so this may concern archaeologists. A possible solution could be a partition of the dialogues between source and overlayed layers as shown by the core plugin "intersection" for the geoprocessing of vector layers.
 
-Thirdly, the tool does not allow identical field names for the resulting point layer, as this would indeed complicate or even prevent the user to interpret the resulting layer correctly. Luckily enough the tool offers a way to rename the fields on the fly before starting the process. Still the renaming is restricted by the maximal length of 10 characters - longer entries get truncated. In the reviewers experience this complicates matters in so far, as in combination of the lack of a logfile the comprehensibility of the resulting files is affected by this.
+Thirdly, the tool does not allow identical field names for the resulting point layer, as this would indeed complicate or even prevent the user to interpret the resulting layer correctly. Luckily enough the tool offers a way to rename the fields on the fly before starting the process. Still the renaming is restricted by the maximal length of 10 characters - longer entries get truncated. In the reviewers experience this complicates matters in so far, as in combination of the lack of a logfile the comprehensibility of the resulting files is affected by this. 
+
+If a polygon layer is joined with another layer (e.g. some further attributes from a csv file), it is not possible to query the linked attributes. This is may be circumvented by saving the joined dataset separately and then querying the new file. In some cases though, this is a step not necessarily integrated in the usual workflows of the user.
 
 Finally, the tool does not offer a temporary layer as result like (again) many of the core plugins. Temporary layers would be an advantage when the sampling of points is a step within a workflow that aims for example to achieve the overall distribution of a position property measured on all measurement points. Here one just unnecessarily saves data of an intermediate value.
 
 #### Communication with the user
 
+While the program runs, the status field in the interface dialogue counts the points that have already been sampled, thereby offering the user the possibility to gauge how the process is coming along.
+
 Testing shows, that there are error messages as well as warnings. Errors encompass wrong or missing choices concerning the layers to be matched or identical fieldnames. A warning is given when layers of different coordination reference systems are used. As it is only warning it is possible to override the message. This allows seamless working with data that might have false metadata. Short status messages support the user in solving errors and problems.
 
 #### Performance and Robustness
 
-The Point sampling tool integrates seamlessly into the QGIS environment. In our test environment it ran stable and robust with datasets up to 16.900 points on buffer layers with significant geometric overlap. The process took less than a minute.
+The Point sampling tool integrates seamlessly into the QGIS environment. In our test set up it ran stable and robust with datasets up to 16.900 points on buffer layers with significant geometric overlap. The process took less than a minute.
 
 #### Help features, tutorials and community
 
@@ -132,19 +131,17 @@ There do not exist any specific training data for this plugin, as there is no of
 
 #### Data ingest, interoperability and programming interfaces
 
-Every dataformat supported in QGIS can be read in. Still, matching the task it is supposed to perform, only point feature (no multipoints) can serve as input layers. The results of the process are outputed as Geopackage (dgpk) by default, csv and shapefile are offered as well.
+Every dataformat supported in QGIS can be read in. Still, matching the task it is supposed to perform, only point feature (no multipoints) can serve as input layers. The results of the process are output as Geopackage (dgpk) by default, csv and shapefile are offered as well.
 
-The QGIS plugin does not offer a batch process. The input data and the parameters have to be manually chosen via the GUI. As stated in the context of the usability of the GUI this is a disadvantage.
-
-The plugin support the QGIS processing API, which allows this plugin to be integrated into other QGIS (batch) proccessing tasks.
+The QGIS plugin does not offer a batch process. The input data and the parameters have to be manually chosen via the GUI. As stated in the context of the usability of the GUI this is a disadvantage. The plugin supports the QGIS processing API, though, which allows this plugin to be integrated into other QGIS (batch) proccessing tasks.
 
 ### Developer perspective
 
 From the perspective of a developer whose intention it is to modify and/or extend the software, several crucial things are important and also met by the software we are reviewing. At first, we need to remark that an extension of the software is enabled by the software being published on Github and is licensed under the GNU GPL license. This license not only enables other developers to reuse the software, but also the modification of the software for their own uses under the condition that the software is published under the same license. As an open license which intends to promote the usage of free software, we think that this license is a good choice for a QGIS plugin.
 
-To get developers encouraged to work and extend a software, a clear and concise documentation of its purpose along with examples and a documented source code is very beneficial. In the case of the PointSampling Tool we can see that the software itself contains many comments in the given Python source code. It does not provide a HTML documentation, though, which might give it a better accessibility especially for novice programmers. However, we must acknowledge that the actual source code needed to execute the PointSampling Tool QGIS plugin is very limited and manageable, so one might argue that this is not hindering developers to get into extending the plugin. As with any QGIS Python plugin being developed, the process to set up a plugin and to create QGIS plugins in general is well-documented by the QGIS application framework itself, so that the developer is in no immediate need to provide the documentation itself. It is in the nature of QGIS plugins that also not compilation process of the source code or other steps to build the application are needed, so that we can conclude that the building process is well-documented and easily comprehensible for the average developer.
+To get developers encouraged to work on and extend a software, a clear and concise documentation of its purpose along with examples and a documented source code is very beneficial. In the case of the PointSampling Tool we can see that the software itself contains many comments in the given Python source code. It does not provide a HTML documentation, though, which might give it a better accessibility especially for novice programmers. However, we must acknowledge that the actual source code needed to execute the PointSampling Tool QGIS plugin is very limited and manageable, so one might argue that this is not hindering developers to get into extending the plugin. As with any QGIS Python plugin being developed, the process to set up a plugin and to create QGIS plugins in general is well-documented by the QGIS application framework itself, so that the developer is in no immediate need to provide the documentation itself. It is in the nature of QGIS plugins that also no compilation of the source code or other steps to build the application are needed, so that we can conclude that the building process is well-documented and easily comprehensible for the average developer.
 
-However, what is not immediately obvious for a developer is the current state of implementation and application examples of the application. For this publication, we created example data to test the functionality of the QGIS Plugin - something a developer who wants to extend the plugin also needs to do in order to learn about all the plugin's features. Here, a developer would expect either some documented tests on how the functionality of the plugin could be assessed or example data which could be provided in the project repository which helps to sharpen the intention of the plugin as provided by the author.
+However, what is not immediately obvious for a developer is the current state of implementation and application examples of the plugin. For this publication, we created example data to test the functionality of the QGIS Plugin - something a developer who wants to extend the plugin also needs to do in order to learn about all the plugin's features. Here, a developer would expect either some documented tests on how the functionality of the plugin could be assessed or example data which could be provided in the project repository which helps to sharpen the intention of the plugin as provided by the author.
 
 Besides providing this insight for a developer, sample data can also be vital to explain the usefulness of a plugin for a new user or user group, so that we recommend the creation of a small tutorial page either on Github or another linked web resource.
 
@@ -152,19 +149,19 @@ Something we found very positive when reviewing the software was that feature re
 
 Despite the perceived interest of the developer we would welcome a contribution guide, a small guide in which the developer states which extensions to the plugin are welcomed and in which form.
 
-Finally, one could judge the quality of the implementation which has several aspects to consider. Because the software to be reviewed is a QGIS Plugin, certain constraints concerning its implementation are given by requirements on how a QGIS plugin is to be implemented. Therefore, these fundamental implementations details fall out of the judgement of this review. To get an idea about the quality of the actual implementation we refer to the test cases we have created for this publication in which we investigate the results of the plugin for various predefined datasets.
+Finally, one could judge the quality of the implementation which has several aspects to consider. Because the software to be reviewed is a QGIS Plugin, certain constraints concerning its implementation are given by requirements on how a QGIS plugin is to be implemented. Therefore, these fundamental implementations details fall out of the judgement of this review. To get an idea about the quality of the actual implementation we refer to the test cases we have created for this publication in which we investigate the results of the plugin for predefined datasets.
 
 ### Test case
 
-We tested the software to observe, how the Point sampling tool copes with overlapping polygons, and secondly to check the performance on a rather large dataset. For this purpose we selected more or less randomly a rectangular area of 240 x 160 km in northern Germany and created two layers with point features and one with polygon features. 
+We tested the software to observe how the Point sampling tool copes with overlapping polygons, and secondly to check the performance on a rather large dataset. For this purpose we selected more or less randomly a rectangular area of 240 x 160 km in northern Germany and created two layers with point features and one with polygon features. 
 
 The first point layer (A) comprises 360 features spaced 10.000 m apart (fig. 1). These points were buffered with a radius of 22.000 m (polygon layer C) so that each point effectively lies in several overlapping circular buffers. To layer C a second value column was added for further testing.
 
 The second point layer (B) consists of 16.905 features spaced 1.500 m apart, with a slight offset from point layer A (fig. 2). The value samples of the points of layers A and B were taken on the polygon layer C. The resulting point layers were stored as GeoPackages (GPKG).
 
-When sampling from layer A to C, we found that if the polygons overlap (six for the top left point and 13 for a point in the middle in the test case), the tool samples the polygon with the highest value as the ID (fig. 3). It does not matter whether the sampled variable is a numerical value or a character element. The process takes about ten seconds.
+When sampling from layer A to C, we found that if the polygons overlap (six for the top left point and 13 for a point in the middle in the test case), the tool samples the polygon with the highest value as the ID (fig. 3). It does not matter whether the sampled variable is a numerical value or a character element. The process took in the test environment about ten seconds.
 
-Using the sampling tool with Layer B shows that the process took about double the time. Taking several variables from the polygon layer increases the needed time. Nonetheless, the algorithm ran steadily, which can be observed with the status counter, which prints at which point the sampling algorithm is working at the moment. 
+Using the sampling tool with Layer B shows that the process needed about double the time. Taking several variables from the polygon layer increases the run time. Nonetheless, the algorithm runs steadily, which can be observed with the status counter, which prints at which point the sampling algorithm is working at the moment. 
 
 The tests were carried out with QGIS vers. 3.10, Coruna, on a Notebook (Intel Core i5-8265U bits) with Linux Mint 20.1 and on QGIS vers. 3.16, Hannover, on a Intel Core i3-6100U notebook running Kubuntu 18.04. These are no high end machines, therefore suitable for testing a tool used by chronically underfinanced researchers.
 
