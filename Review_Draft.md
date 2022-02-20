@@ -50,13 +50,14 @@ keywords_en:
 
 The QGIS Point sampling tool by Borys Jurgiel is a QGIS plugin, which samples polygon attributes and raster values from multiple layers at specified sampling points: <https://plugins.qgis.org/plugins/pointsamplingtool/> .
 
-The latest stable version is 0.5.3
+The latest stable version is 0.5.3.
 
 ## Software Metadata:
 
 -   Name: *PointSamplingTool*.
 -   Short description: *QGIS plugin for sampling polygon attributes and raster values from multiple layers at specified sampling points*.
 -   Reviewed version: *0.5.3*.
+-   Reviewed software fork repo: <https://github.com/Research-Squirrel-Engineers/pointsamplingtool>.
 -   Platform: *Windows, MacOS, Linux*.
 -   Website: [*https://plugins.qgis.org/plugins/pointsamplingtool/*](https://plugins.qgis.org/plugins/pointsamplingtool/).
 -   Licensing: *"Open Source with GNU General Public License (GPL)"*.
@@ -67,15 +68,15 @@ The latest stable version is 0.5.3
 
 In archaeology, the analysis of site factors of settlements and the correlation of sites and geographic conditions (land use, elevation, slope, accessibility, etc.) are questions that have been pursued with cartographic methods for more than 100 years [@grunwald_2016, 112](\#grunwald_2016). These investigations can nowadays be carried out almost seamlessly with the help of Geographic Information Systems. In many cases, e.g. if a site size is unknown [@miera_2020, 103](\#miera_2020), queries for the distribution of certain factors, such as soil type or land use are often employed on the simplest geometric features - points.
 
-Here, the Point Sampling Tool serves as a workhorse, as it is designed to facilitate the task of obtaining values of overlying geographic features such as soil types at points of interest: The geographic information are stored in maps, that can be digitized or - increasingly so - are generated born digital. Once the information is held geo-referenced and in a GIS compatible format and the location of sites is held in a digital format as well, the QGIS Point sampling tool can be used to transfer the relevant information from the maps to the site location, by adding them as attributes to the geometry of the points in request. The output table can then be further analysed according to the archaeological question.
+Here, the *Point Sampling Tool* serves as a workhorse, as it is designed to facilitate the task of obtaining values of overlying geographic features such as soil types at points of interest: The geographic information are stored in maps, that can be digitized or - increasingly so - are generated born digital. Once the information is held geo-referenced and in a GIS compatible format and the location of sites is held in a digital format as well, the QGIS *Point Sampling Tool* can be used to transfer the relevant information from the maps to the site location, by adding them as attributes to the geometry of the points in request. The output table can then be further analysed according to the archaeological question.
 
 Two of the reviewers used the tool in their research and teaching ([@Klammt_2015](\#klammt_2015), [@schmidt_2016](\#schmidt_2016)). Both focus on gathering information regarding the geographical settings of archaeological sites and analysing them statistically in respect to site evidence and settlement activities. The usage of the Point sampling tool formed a necessary but hardly remarkable part of their research routine, so both did not expand on the tool in their theses. As the tool is probably also rarely cited by other authors, we name here some studies for which it could have been used since its first release in 2008: [@miera_2020](\#miera_2020), [@hinz_2014](\#hinz_2014]), [@cappenberg_2020](\#cappenberg_2020).
 
-Though useful for archaeological questions, the Point sampling tool is a universal helper and not specifically shaped for archaeological use. Other disciplines employing it may be digital cartographers (see, e.g. Arco 2013: <https://digital-geography.com/qgis-plugins-point-sampling-tool/>), biologists or ecologists ([http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Object-based_classification\_(Tutorial)](http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Object-based_classification_(Tutorial)){.uri}) or anyone using GIS software.
+Though useful for archaeological questions, the *Point Sampling Tool* is a universal helper and not specifically shaped for archaeological use. Other disciplines employing it may be digital cartographers (see, e.g. Arco 2013: <https://digital-geography.com/qgis-plugins-point-sampling-tool/>), biologists or ecologists ([http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Object-based_classification\_(Tutorial)](http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Object-based_classification_(Tutorial)){.uri}) or anyone using GIS software.
 
 #### Workflow of the QGIS Point Sampling Tool
 
-The Python-based Point Sampling Tool extracts information from layers ("maps") loaded to QGIS at points specified by a point layer and adds this information to the attribute table of the points. It is capable of sampling both multiple raster and vector layers within QGIS simultaneously. In doing so, it follows a routine that addresses the vector layers first and then the raster data (if both data types are included at the same time). This process sequence also determines the arrangement of the attribute fields.
+The Python-based *Point Sampling Tool* extracts information from layers ("maps") loaded to QGIS at points specified by a point layer and adds this information to the attribute table of the points. It is capable of sampling both multiple raster and vector layers within QGIS simultaneously. In doing so, it follows a routine that addresses the vector layers first and then the raster data (if both data types are included at the same time). This process sequence also determines the arrangement of the attribute fields.
 
 For multiband raster data the user has to decide which bands he wishes to sample (several bands at once are possible). For vector the attributes have to be selected - again it is possible to include all attributes. The number of resulting records is identical to the number of input points. For each vector layer only one geometry (feature) at one sampling point is taken into account, that is the last one in the processing, i.e. the one with the highest id. Therefore the Point sampling tool can not be used for obtaining complete and fully controlled values form vector layers with several overlaying geometries. The latter could for example be the case for layers with overlapping buffers of sites or geographical feature that partly overlay each other.
 
@@ -83,10 +84,10 @@ The algorithms have been implemented correctly.
 
 ### Usability and target group orientation
 
-The software is published as a QGIS python plugin: <https://plugins.qgis.org/plugins/pointsamplingtool/>. This plugin page refers to a GitHub repository by the user borysiasty
+The software is published as a QGIS Python plugin: <https://plugins.qgis.org/plugins/pointsamplingtool/>. This plugin page refers to a GitHub repository by the user borysiasty
 [borysiasty/pointsamplingtool](https://github.com/borysiasty/pointsamplingtool). The last relesased version is v0.5.3 which is the basis for this software review, which has been forked and published at [Research-Squirrel-Engineers/pointsamplingtool](https://github.com/Research-Squirrel-Engineers/pointsamplingtool).
 
-Since the Point sampling tool is a plugin, the software naturally requires the installation of the standalone QGIS software (a version of the Point sampling tool is available for each major QGIS release). Hardware requirements and possible limitations of QGIS itself are accordingly outside the scope of this review.
+Since the *Point Sampling Tool* is a plugin, the software naturally requires the installation of the standalone QGIS software (a version of the *Point Sampling Tool* is available for each major QGIS release). Hardware requirements and possible limitations of QGIS itself are accordingly outside the scope of this review.
 
 #### Installation
 
@@ -116,15 +117,15 @@ Testing shows, that there are error messages as well as warnings. Errors encompa
 
 #### Performance and Robustness
 
-The Point sampling tool integrates seamlessly into the QGIS environment. In our test set up it ran stable and robust with datasets up to 16.900 points on buffer layers with significant geometric overlap. The process took less than a minute.
+The *Point Sampling Tool* integrates seamlessly into the QGIS environment. In our test set up it ran stable and robust with datasets up to 16.900 points on buffer layers with significant geometric overlap. The process took less than a minute.
 
 #### Help features, tutorials and community
 
-There are no tutorials offered by QGIS or the developer themselves but the very short README on github. The sheer number of 348.629 downloads (stated 6th February 2022 at <https://plugins.qgis.org/plugins/>) shows though, this tool is widely used. A short online search brings up a number of tutorials from users, teachers and university courses. An example may be the blog post by Scott Arco: <https://digital-geography.com/qgis-plugins-point-sampling-tool/> , the tutorial by Ujaval Ghandi: <http://www.qgistutorials.com/en/docs/sampling_raster_data.html> or the YouTube tutorial by Yannick Kremer: <https://www.youtube.com/watch?v=bAyxLC3npCA>.
+There are no tutorials offered by QGIS or the developer themselves but the very short README on GitHub. The sheer number of 350.874 downloads (stated 22nd February 2022 at <https://plugins.qgis.org/plugins/>) shows though, this tool is widely used. A short online search brings up a number of tutorials from users, teachers and university courses. An example may be the blog post by Scott Arco: <https://digital-geography.com/qgis-plugins-point-sampling-tool/> , the tutorial by Ujaval Ghandi: <http://www.qgistutorials.com/en/docs/sampling_raster_data.html> or the YouTube tutorial by Yannick Kremer: <https://youtu.be/bAyxLC3npCA>.
 
 This is especially helpful, as they come in a variety of languages like French (<https://www.youtube.com/watch?v=QdkOPXssapg>), Spanish (<https://www.cursosgis.com/como-trabaja-el-complemento-point-sampling-tool-en-qgis/>) and Polish (<https://www.youtube.com/watch?v=KicHepZNaKA>), so its use in an international context with multilingual research teams is facilitated.
 
-If one wishes to gain more information, there are several points of departure: The QGIS Documentation and the [QGIS Plugin repository](https://plugins.qgis.org/plugins/) which leads the user to the code repository of the plugin at github (<https://github.com/borysiasty/pointsamplingtool>). Additionally the QGIS Plugin repository gives a thorough description of the tool and its main objectives as well as a list of the versions history ([Point sampling tool](https://plugins.qgis.org/plugins/pointsamplingtool/)).
+If one wishes to gain more information, there are several points of departure: The QGIS Documentation and the [QGIS Plugin repository](https://plugins.qgis.org/plugins/) which leads the user to the code repository of the plugin at github (<https://github.com/borysiasty/pointsamplingtool>). Additionally the QGIS Plugin repository gives a thorough description of the tool and its main objectives as well as a list of the versions history ([*Point Sampling Tool*](https://plugins.qgis.org/plugins/pointsamplingtool/)).
 
 There do not exist any specific training data for this plugin, as there is no official tutorial. Nonetheless any GIS course data can be used, that incorporates point data alongside vector and/or raster data.
 
@@ -138,9 +139,9 @@ The QGIS plugin does not offer a batch process. The input data and the parameter
 
 From the perspective of a developer whose intention it is to modify and/or extend the software, several crucial things are important and also met by the software we are reviewing. At first, we need to remark that an extension of the software is enabled by the software being published on Github and is licensed under the GNU GPL license. This license not only enables other developers to reuse the software, but also the modification of the software for their own uses under the condition that the software is published under the same license. As an open license which intends to promote the usage of free software, we think that this license is a good choice for a QGIS plugin.
 
-To get developers encouraged to work on and extend a software, a clear and concise documentation of its purpose along with examples and a documented source code is very beneficial. In the case of the PointSampling Tool we can see that the software itself contains many comments in the given Python source code. It does not provide a HTML documentation, though, which might give it a better accessibility especially for novice programmers. However, we must acknowledge that the actual source code needed to execute the PointSampling Tool QGIS plugin is very limited and manageable, so one might argue that this is not hindering developers to get into extending the plugin. As with any QGIS Python plugin being developed, the process to set up a plugin and to create QGIS plugins in general is well-documented by the QGIS application framework itself, so that the developer is in no immediate need to provide the documentation itself. It is in the nature of QGIS plugins that also no compilation of the source code or other steps to build the application are needed, so that we can conclude that the building process is well-documented and easily comprehensible for the average developer.
+To get developers encouraged to work on and extend a software, a clear and concise documentation of its purpose along with examples and a documented source code is very beneficial. In the case of the PointSampling Tool we can see that the software itself contains many comments in the given Python source code. It does not provide a HTML documentation, though, which might give it a better accessibility especially for novice programmers. However, we must acknowledge that the actual source code needed to execute the *Point Sampling Tool* QGIS plugin is very limited and manageable, so one might argue that this is not hindering developers to get into extending the plugin. As with any QGIS Python plugin being developed, the process to set up a plugin and to create QGIS plugins in general is well-documented by the QGIS application framework itself, so that the developer is in no immediate need to provide the documentation itself. It is in the nature of QGIS plugins that also no compilation of the source code or other steps to build the application are needed, so that we can conclude that the building process is well-documented and easily comprehensible for the average developer.
 
-However, what is not immediately obvious for a developer is the current state of implementation and application examples of the plugin. For this publication, we created example data to test the functionality of the QGIS Plugin - something a developer who wants to extend the plugin also needs to do in order to learn about all the plugin's features. Here, a developer would expect either some documented tests on how the functionality of the plugin could be assessed or example data which could be provided in the project repository which helps to sharpen the intention of the plugin as provided by the author.
+However, what is not immediately obvious for a developer is the current state of implementation and application examples of the plugin. For this publication, we created example data to test the functionality of the QGIS plugin - something a developer who wants to extend the plugin also needs to do in order to learn about all the plugin's features. Here, a developer would expect either some documented tests on how the functionality of the plugin could be assessed or example data which could be provided in the project repository which helps to sharpen the intention of the plugin as provided by the author.
 
 Besides providing this insight for a developer, sample data can also be vital to explain the usefulness of a plugin for a new user or user group, so that we recommend the creation of a small tutorial page either on Github or another linked web resource.
 
@@ -152,7 +153,9 @@ Finally, one could judge the quality of the implementation which has several asp
 
 ### Test case
 
-We tested the software to observe how the Point sampling tool copes with overlapping polygons, and secondly to check the performance on a rather large dataset. For this purpose we selected more or less randomly a rectangular area of 240 x 160 km in northern Germany and created two layers with point features and one with polygon features. 
+We tested the software to observe how the *Point Sampling Tool* copes with overlapping polygons, and secondly to check the performance on a rather large dataset. For this purpose we selected more or less randomly a rectangular area of 240 x 160 km in northern Germany and created two layers with point features and one with polygon features.
+
+The test data and a visualisation are available at <https://github.com/Research-Squirrel-Engineers/pointsamplingtool-testdata>.
 
 The first point layer (A) comprises 360 features spaced 10.000 m apart (fig. 1). These points were buffered with a radius of 22.000 m (polygon layer C) so that each point effectively lies in several overlapping circular buffers. To layer C a second value column was added for further testing.
 
@@ -163,8 +166,6 @@ When sampling from layer A to C, we found that if the polygons overlap (six for 
 Using the sampling tool with Layer B shows that the process needed about double the time. Taking several variables from the polygon layer increases the run time. Nonetheless, the algorithm runs steadily, which can be observed with the status counter, which prints at which point the sampling algorithm is working at the moment. 
 
 The tests were carried out with QGIS vers. 3.10, Coruna, on a Notebook (Intel Core i5-8265U bits) with Linux Mint 20.1 and on QGIS vers. 3.16, Hannover, on a Intel Core i3-6100U notebook running Kubuntu 18.04. These are no high end machines, therefore suitable for testing a tool used by chronically underfinanced researchers.
-
-The test data and a visualisation are available at <https://github.com/Research-Squirrel-Engineers/pointsamplingtool-testdata>.
 
 ------------------------------------------------------------------------
 
