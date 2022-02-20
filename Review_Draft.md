@@ -26,9 +26,7 @@ author:
     name: Florian Thiery
     affiliation: Römisch-Germanisches Zentralmuseum – Leibniz-Forschungsinstitut für Archäologie
     orcid: 0000-0002-3246-3531
-    bio: "Florian Thiery studied geodesy and is a Research Software Engineer (RSE) in the *Scientific IT, Digital Platforms and Tools* department at the Römisch-Germanisches Zentralmuseum in Mainz. He is the initiator of the *Research Squirrel Engineers*, a network for RSEs in the Digital Humanities that pursues community projects with a focus on free and open data, as well as Linked Open Data. As part of a fellowship of the *Wikimedia Fellow-Programm Freies Wissen*, he is working on the modelling of Irish ᚑᚌᚆᚐᚋ (Ogham) stones and their publication in the Wikimedia universe."    
-
-
+    bio: "Florian Thiery studied geodesy and is a Research Software Engineer (RSE) in the *Scientific IT, Digital Platforms and Tools* department at the Römisch-Germanisches Zentralmuseum in Mainz. He is the initiator of the *Research Squirrel Engineers Network*, a network for RSEs in the Digital Humanities and Geosiences that pursues community projects with a focus on free and open data, as well as Linked Open Data. He is part of the "German Society for Research Software - de-RSE e.V." board as vice treasurer as well member of the Scientific Committee of the "Computer Applications & Quantitative Methods in Archaeology" (CAA) andmember fo the Scientific Advisory Board of the German CAA Section.
 
 bibliography: bibliography.bib
 csl: apa-6th-edition.csl
