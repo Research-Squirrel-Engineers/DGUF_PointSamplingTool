@@ -85,7 +85,8 @@ The algorithms have been implemented correctly.
 
 ### Usability and target group orientation
 
-The software is published as a QGIS python plugin: <https://plugins.qgis.org/plugins/pointsamplingtool/> .
+The software is published as a QGIS python plugin: <https://plugins.qgis.org/plugins/pointsamplingtool/>. This plugin page refers to a GitHub repository by the user borysiasty
+[borysiasty/pointsamplingtool](https://github.com/borysiasty/pointsamplingtool). The last relesased version is v0.5.3 which is the basis for this software review, which has been forked and published at [Research-Squirrel-Engineers/pointsamplingtool](https://github.com/Research-Squirrel-Engineers/pointsamplingtool).
 
 Since the Point sampling tool is a plugin, the software naturally requires the installation of the standalone QGIS software (a version of the Point sampling tool is available for each major QGIS release). Hardware requirements and possible limitations of QGIS itself are accordingly outside the scope of this review.
 
