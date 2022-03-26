@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "points_1500",
+"name": "points_1500_B",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
 "features": [
 { "type": "Feature", "properties": { "id": 0 }, "geometry": { "type": "Point", "coordinates": [ 1171103.736209175083786, 7082089.906501228921115 ] } },
