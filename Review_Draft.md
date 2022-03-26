@@ -1,7 +1,7 @@
 ---
 title: Software Review for the Software PointSamplingTool
 
-abstract_de: Das QGIS Point sampling tool von Borys Jurgiel ist ein QGIS plugin, mit dem an definierten Punkten Werte aus überlagernden Vektor- und Rasterlayern gewonnen werden können. Die ausgelesenen Werte werden zu der Attributtabelle des genutzten Punktelayers hinzugefügt. Es handelt sich um ein allgemeines Tool, das aber besonders geeignet ist, um archäologische Analysen zu Standortbedingungen und naturräumlichen Faktoren zu unterstützen. Der Review betracht das Open Source Werkzeug unter den Aspekten der Nutzerführung, der Verlässlichkeit und Performanz sowie seiner möglichen Erweiterbarkeit. 
+abstract_de: Das QGIS Point sampling tool von Borys Jurgiel ist ein QGIS plugin, mit dem an definierten Punkten Werte aus überlagernden Vektor- und Rasterlayern gewonnen werden. Die ausgelesenen Werte werden zu der Attributtabelle des genutzten Punktelayers hinzugefügt. Es handelt sich um ein allgemeines Tool, das aber besonders geeignet ist, um archäologische Analysen zu Standortbedingungen und naturräumlichen Faktoren zu unterstützen. Der Review betracht das Open Source Werkzeug unter den Aspekten der Nutzerführung, der Verlässlichkeit und Performanz sowie seiner möglichen Erweiterbarkeit. 
 
 abstract_en: The QGIS Point sampling tool by Borys Jurgiel is a QGIS plugin that allows to extract values from overlaying vector and raster layers at specified points. The values are added to the attribute table of the used points layer. It is not a specific research tool, but is particularly suitable for supporting archaeological analyses of, for example, site conditions and natural factors. The review considers the open source tool under the aspects of user guidance, reliability and performance as well as its possible extensibility. 
 
@@ -44,6 +44,7 @@ keywords_en:
   - research software
   - review
   - QGIS
+  
 ---
 
 # Software Review for the Software PointSamplingTool
@@ -72,7 +73,7 @@ Here, the *Point Sampling Tool* serves as a workhorse, as it is designed to faci
 
 Two of the reviewers used the tool in their research and teaching ([@Klammt_2015](\#klammt_2015), [@schmidt_2016](\#schmidt_2016)). Both focus on gathering information regarding the geographical settings of archaeological sites and analysing them statistically in respect to site evidence and settlement activities. The usage of the Point sampling tool formed a necessary but hardly remarkable part of their research routine, so both did not expand on the tool in their theses. As the tool is probably also rarely cited by other authors, we name here some studies for which it could have been used since its first release in 2008: [@miera_2020](\#miera_2020), [@hinz_2014](\#hinz_2014]), [@cappenberg_2020](\#cappenberg_2020).
 
-Though useful for archaeological questions, the *Point Sampling Tool* is a universal helper and not specifically shaped for archaeological use. Other disciplines employing it may be digital cartographers (see, e.g. Arco 2013: <https://digital-geography.com/qgis-plugins-point-sampling-tool/>), biologists or ecologists ([http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Object-based_classification\_(Tutorial)](http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Object-based_classification_(Tutorial)){.uri}) or anyone using GIS software.
+Though useful to answer archaeological questions, the *Point Sampling Tool* is a universal helper and not specifically shaped for archaeological use. Other disciplines employing it may be digital cartographers (see, e.g. Arco 2013: <https://digital-geography.com/qgis-plugins-point-sampling-tool/>), biologists or ecologists ([http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Object-based_classification\_(Tutorial)](http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Object-based_classification_(Tutorial)){.uri}) or anyone using GIS software.
 
 #### Workflow of the QGIS Point Sampling Tool
 
@@ -91,7 +92,7 @@ Since the *Point Sampling Tool* is a plugin, the software naturally requires the
 
 #### Installation
 
-The installation follows along the routine of the QGIS Plugin dialog. As the tool is not part of the geo processing toolbox, it does not align to it in the menu, but users will find it from the drop down menu of "plugins" (under "Analysis" in later QGIS versions). From long lasting experience in introductionary courses on QGIS, the authors underline, that this is a considerable threshold for archaeologists, who are not working constantly with QGIS but only occasionally for carrying certain tasks. Still, this sometimes slightly confusing arrangement of the plugins in the menu is an overall usability setting of QGIS and not an issue that the Point sampling tool is to be blamed for.
+The installation follows along the routine of the QGIS Plugin dialog. As the tool is not part of the geo processing toolbox, it does not align to it in the menu, but users will find it from the drop down menu of "plugins" (under "Analysis" in later QGIS versions). From long lasting experience in introductionary courses on QGIS, the authors underline, that this is a considerable threshold for archaeologists, who are not working constantly with QGIS but only occasionally in order to carry out certain tasks. Still, this sometimes slightly confusing arrangement of the plugins in the menu is an overall usability setting of QGIS and not an issue that the Point sampling tool is to be blamed for.
 
 #### Interface
 
@@ -99,11 +100,11 @@ The plugin comes in English only.
 
 The Graphical User Interface follows the rather decent overall design and logic of the QGIS tool dialogues: It opens up with an assistant that gives the user full control to choose the layer that holds as points the locations as well as the layers to be sampled. Furthermore the user has to indicate which attribute-values from the source and the sample layer(s) should be part of the resulting new point layer. When working with raster data this means the selection of the raster band. A second tab gives a preview of the attribute table. The third informs about the tool, which is the convention for QGIS Plugins. Here the warning that the tool does not align to multipoint-features is placed relatively well. There is however no logfile that facilitates the documentation and by that the reproducibility.
 
-Here we feel that the usability offers certain thresholds. Firstly, it would add to the usability, if one could include into the process also layers, which are not actively in display. Wherever granular vector data are involved QGIS considerably slows on computers which do not meet the special requirements of large data processing. A workaround applied often is to not display the data while processing them. From our experience researchers and students rely mostly on less powerful hardware.
+Here we feel that the usability offers certain thresholds. Firstly, it would add to it, if one could include into the process also layers, which are not actively in display. Wherever granular vector data are involved QGIS considerably slows on computers which do not meet the special requirements of large data processing. A workaround applied often is to not display the data while processing them. From our experience researchers and students rely mostly on less powerful hardware.
 
 Secondly, depending on the number of fields the input point and the overlayed layers carry the selection of the attribute-fields quickly becomes confusing, tiring and facilitates errors. As an example, geodata on soil types often bring a quantity of attribute fields, so this may concern archaeologists. A possible solution could be a partition of the dialogues between source and overlayed layers as shown by the core plugin "intersection" for the geoprocessing of vector layers.
 
-Thirdly, the tool does not allow identical field names for the resulting point layer, as this would indeed complicate or even prevent the user to interpret the resulting layer correctly. Luckily enough the tool offers a way to rename the fields on the fly before starting the process. Still the renaming is restricted by the maximal length of 10 characters - longer entries get truncated. In the reviewers experience this complicates matters in so far, as in combination of the lack of a logfile the comprehensibility of the resulting files is affected by this. 
+Thirdly, the tool does not allow identical field names for the resulting point layer, as this would indeed complicate or even prevent the user to interpret the resulting layer correctly. Luckily enough the tool offers a way to rename the fields on the fly before starting the process. Still the renaming is restricted by the maximal length of ten characters - longer entries get truncated. In the reviewers experience this complicates matters in so far, as in combination of the lack of a logfile the comprehensibility of the resulting files is affected by this. 
 
 If a polygon layer is joined with another layer (e.g. some further attributes from a csv file), it is not possible to query the linked attributes. This is may be circumvented by saving the joined dataset separately and then querying the new file. In some cases though, this is a step not necessarily integrated in the usual workflows of the user.
 
@@ -155,11 +156,11 @@ Finally, one could judge the quality of the implementation which has several asp
 
 We tested the software to observe how the *Point Sampling Tool* copes with overlapping polygons, and secondly to check the performance on a rather large dataset. For this purpose we selected more or less randomly a rectangular area of 240 x 160 km in northern Germany and created two layers with point features and one with polygon features.
 
-The test data and a visualisation are available at <https://github.com/Research-Squirrel-Engineers/pointsamplingtool-testdata>.
+The test data are available at <https://github.com/Research-Squirrel-Engineers/pointsamplingtool-testdata>.
 
-The first point layer (A) comprises 360 features spaced 10.000 m apart (fig. 1). These points were buffered with a radius of 22.000 m (polygon layer C) so that each point effectively lies in several overlapping circular buffers. To layer C a second value column was added for further testing.
+The first point layer A (points\_10000\_A) comprises 360 features spaced 10.000 m apart (fig. 1). These points were buffered with a radius of 22.000 m (C\_with\_plcnames) so that each point effectively lies in several overlapping circular buffers. To layer C a second value column was added for further testing.
 
-The second point layer (B) consists of 16.905 features spaced 1.500 m apart, with a slight offset from point layer A (fig. 2). The value samples of the points of layers A and B were taken on the polygon layer C. The resulting point layers were stored as GeoPackages (GPKG).
+The second point layer B (points\_1500\_B) consists of 16.905 features spaced 1.500 m apart, with a slight offset from point layer A (fig. 2). The value samples of the points of layers A and B were taken on the polygon layer C. The resulting point layers as well as the input layers were stored as GeoPackages (GPKG).
 
 When sampling from layer A to C, we found that if the polygons overlap (six for the top left point and 13 for a point in the middle in the test case), the tool samples the polygon with the highest value as the ID (fig. 3). It does not matter whether the sampled variable is a numerical value or a character element. The process took in the test environment about ten seconds.
 
